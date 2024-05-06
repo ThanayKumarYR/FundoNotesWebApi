@@ -1,0 +1,12 @@
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\bin\Debug\net8.0\ModelLayer.deps.json
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\bin\Debug\net8.0\ModelLayer.dll
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\bin\Debug\net8.0\ModelLayer.pdb
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\obj\Debug\net8.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\obj\Debug\net8.0\ModelLayer.AssemblyInfoInputs.cache
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\obj\Debug\net8.0\ModelLayer.AssemblyInfo.cs
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\obj\Debug\net8.0\ModelLayer.csproj.CoreCompileInputs.cache
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\obj\Debug\net8.0\ModelLayer.sourcelink.json
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\obj\Debug\net8.0\ModelLayer.dll
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\obj\Debug\net8.0\refint\ModelLayer.dll
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\obj\Debug\net8.0\ModelLayer.pdb
+C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\obj\Debug\net8.0\ref\ModelLayer.dll
