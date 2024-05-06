@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using BusinessLayer.Interface;
 using ModelLayer.Registration;
 using ModelLayer.ResponseModel;
+using Microsoft.Extensions.Logging;
 
 namespace Fundo_Notes.Controllers
 {
@@ -11,18 +12,20 @@ namespace Fundo_Notes.Controllers
     public class RegistrationController : ControllerBase
     {
         private readonly IRegistrationBusinessLayer _registrationbl;
-
-        public RegistrationController(IRegistrationBusinessLayer registrationbusinessLayer)
+        private readonly ILogger<RegistrationController> _logger;
+        public RegistrationController(IRegistrationBusinessLayer registrationbusinessLayer, ILogger<RegistrationController> logger)
         {
             _registrationbl = registrationbusinessLayer;
+            _logger = logger;
         }
 
-        [HttpPost("UserRegister")]
+        [HttpPost("Register")]
         public async Task<IActionResult> UserRegistration(UserRegistrationModel user)
         {
             try
             {
                 await _registrationbl.RegisterUser(user);
+                _logger.LogInformation("Registration successful");
                 var response = new ResponseModelLayer<UserRegistrationModel>
                 {
                     Success = true,
@@ -38,6 +41,7 @@ namespace Fundo_Notes.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError("Invalid Request");
                 var response = new ResponseModelLayer<string>
                 {
                     Success = false,

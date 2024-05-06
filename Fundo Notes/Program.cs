@@ -2,15 +2,24 @@
 
 using BusinessLayer.Interface;
 using BusinessLayer.Services;
+using NLog.Web;
 using Repository.Context;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// NLog
+var logpath = Path.Combine(Directory.GetCurrentDirectory(), "Logs");
+builder.Logging.AddDebug();
+NLog.GlobalDiagnosticsContext.Set("LogDirectory", logpath);
+builder.Logging.ClearProviders();
+builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+builder.Host.UseNLog();
 
+// Add services to the containe
 builder.Services.AddControllers();
+//add scope
 builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddScoped<IRegistrationBusinessLayer, RegistrationServiceBusinessLayer>();
 builder.Services.AddScoped<IRegistrationRepositoryLayer, RegistrationServiceRepositoryLayer>();

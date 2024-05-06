@@ -74,3 +74,7 @@ C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\obj\Debug\net8.0\refint\Fun
 C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\obj\Debug\net8.0\Fundo Notes.pdb
 C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\obj\Debug\net8.0\Fundo Notes.genruntimeconfig.cache
 C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\obj\Debug\net8.0\ref\Fundo Notes.dll
+C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\NLog.config
+C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\NLog.dll
+C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\NLog.Web.AspNetCore.dll

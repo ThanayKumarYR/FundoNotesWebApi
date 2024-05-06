@@ -1,0 +1,58 @@
+2024-05-06 12:36:38.5526|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-06 12:36:38.7291|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-06 12:36:38.7291|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-06 12:36:38.7291|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-06 12:36:38.7291|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-06 12:36:38.7291|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes
+2024-05-06 12:36:40.0492|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-06 12:36:40.5403|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 489.8165ms
+2024-05-06 12:36:40.5403|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-06 12:36:40.7556|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 208.8579ms
+2024-05-06 12:36:41.5745|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-06 12:36:41.5745|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-06 12:36:41.5745|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-06 12:36:41.5745|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-06 12:36:41.5814|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-06 12:36:41.5814|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 9.1404ms
+2024-05-06 12:36:41.6264|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-06 12:36:41.6264|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-06 12:36:41.6286|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 54.0830ms
+2024-05-06 12:36:41.6286|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 55.1584ms
+2024-05-06 12:36:41.6488|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-06 12:36:41.6488|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 74.4397ms
+2024-05-06 12:36:41.7655|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 184.0910ms
+2024-05-06 12:36:42.0800|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-06 12:36:42.3172|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 237.1698ms
+2024-05-06 12:44:34.8735|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-06 12:44:34.9490|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-06 12:44:34.9490|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-06 12:44:34.9490|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-06 12:44:34.9490|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-06 12:44:34.9490|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes
+2024-05-06 12:44:35.8160|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-06 12:44:35.9601|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 143.1265ms
+2024-05-06 12:44:35.9601|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-06 12:44:36.0851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 122.8228ms
+2024-05-06 12:44:37.3888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-06 12:44:37.3888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-06 12:44:37.3888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-06 12:44:37.3888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-06 12:44:37.3947|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-06 12:44:37.3947|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 9.3260ms
+2024-05-06 12:44:37.4270|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-06 12:44:37.4270|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-06 12:44:37.4270|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 40.7527ms
+2024-05-06 12:44:37.4270|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 41.0780ms
+2024-05-06 12:44:37.4270|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-06 12:44:37.4408|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 51.7068ms
+2024-05-06 12:44:37.4570|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 62.3018ms
+2024-05-06 12:44:37.7398|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-06 12:44:37.8855|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 145.6333ms
+2024-05-06 12:46:34.9951|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Registration/Register - application/json 104
+2024-05-06 12:46:34.9951|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-06 12:46:35.0413|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.Registration.UserRegistrationModel) on controller Fundo_Notes.Controllers.RegistrationController (Fundo Notes).
+2024-05-06 12:46:36.6718|INFO|Fundo_Notes.Controllers.RegistrationController|Registration successful
+2024-05-06 12:46:36.6718|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModelLayer`1[[ModelLayer.Registration.UserRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-06 12:46:36.6889|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes) in 1637.1517ms
+2024-05-06 12:46:36.6889|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-06 12:46:36.6889|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Registration/Register - 200 - application/json;+charset=utf-8 1694.8384ms
