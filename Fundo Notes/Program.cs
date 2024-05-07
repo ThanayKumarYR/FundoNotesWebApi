@@ -4,6 +4,8 @@ using BusinessLayer.Interface;
 using BusinessLayer.Services;
 using NLog.Web;
 using Repository.Context;
+using Repository.Interface;
+using Repository.Service;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Services;
 
@@ -23,6 +25,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddScoped<IRegistrationBusinessLayer, RegistrationServiceBusinessLayer>();
 builder.Services.AddScoped<IRegistrationRepositoryLayer, RegistrationServiceRepositoryLayer>();
+builder.Services.AddScoped<IAuthServiceRepositoryLayer, AuthServiceRepositoryLayer>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

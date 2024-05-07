@@ -1,0 +1,104 @@
+2024-05-07 09:04:19.7133|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-07 09:04:19.8081|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-07 09:04:19.8081|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-07 09:04:19.8081|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-07 09:04:19.8081|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-07 09:04:19.8081|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes
+2024-05-07 09:04:20.5832|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-07 09:04:20.8339|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 249.9364ms
+2024-05-07 09:04:20.8339|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-07 09:04:20.9392|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 102.7339ms
+2024-05-07 09:04:20.9479|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-07 09:04:20.9479|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-07 09:04:20.9479|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-07 09:04:20.9479|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-07 09:04:20.9479|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-07 09:04:20.9479|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.2506ms
+2024-05-07 09:04:20.9792|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-07 09:04:20.9792|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 32.1555ms
+2024-05-07 09:04:20.9792|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-07 09:04:20.9792|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 33.4127ms
+2024-05-07 09:04:21.0008|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-07 09:04:21.0008|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 53.1657ms
+2024-05-07 09:04:21.0239|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 75.6537ms
+2024-05-07 09:04:21.2462|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-07 09:04:21.3858|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 139.5842ms
+2024-05-07 09:08:37.7027|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Registration/login - application/json 61
+2024-05-07 09:08:37.7109|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.RegistrationController.UserLogin (Fundo Notes)'
+2024-05-07 09:08:37.7484|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(ModelLayer.Registration.UserLoginModel) on controller Fundo_Notes.Controllers.RegistrationController (Fundo Notes).
+2024-05-07 09:08:39.5131|ERROR|Fundo_Notes.Controllers.RegistrationController|Failed to login User with Password 'thanay@123' not Found.
+2024-05-07 09:08:39.5212|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModelLayer`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-07 09:08:39.5212|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.RegistrationController.UserLogin (Fundo Notes) in 1775.8156ms
+2024-05-07 09:08:39.5212|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.RegistrationController.UserLogin (Fundo Notes)'
+2024-05-07 09:08:39.5212|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Registration/login - 200 - application/json;+charset=utf-8 1831.1606ms
+2024-05-07 09:10:27.1473|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Registration/Register - application/json 116
+2024-05-07 09:10:27.1473|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-07 09:10:27.1473|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.Registration.UserRegistrationModel) on controller Fundo_Notes.Controllers.RegistrationController (Fundo Notes).
+2024-05-07 09:10:27.1644|ERROR|Fundo_Notes.Controllers.RegistrationController|Invalid Request
+2024-05-07 09:10:27.1644|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModelLayer`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-07 09:10:27.1644|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes) in 10.8231ms
+2024-05-07 09:10:27.1644|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-07 09:10:27.1644|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Registration/Register - 200 - application/json;+charset=utf-8 20.4766ms
+2024-05-07 09:11:01.3045|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Registration/Register - application/json 116
+2024-05-07 09:11:01.3045|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-07 09:11:01.3045|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.Registration.UserRegistrationModel) on controller Fundo_Notes.Controllers.RegistrationController (Fundo Notes).
+2024-05-07 09:11:01.4948|INFO|Fundo_Notes.Controllers.RegistrationController|Registration successful
+2024-05-07 09:11:01.4948|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModelLayer`1[[ModelLayer.Registration.UserRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 09:11:01.5003|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes) in 192.2423ms
+2024-05-07 09:11:01.5003|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-07 09:11:01.5003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Registration/Register - 200 - application/json;+charset=utf-8 196.5372ms
+2024-05-07 09:11:38.7443|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Registration/login - application/json 68
+2024-05-07 09:11:38.7443|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.RegistrationController.UserLogin (Fundo Notes)'
+2024-05-07 09:11:38.7443|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(ModelLayer.Registration.UserLoginModel) on controller Fundo_Notes.Controllers.RegistrationController (Fundo Notes).
+2024-05-07 09:11:39.2151|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModelLayer`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-07 09:11:39.2151|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.RegistrationController.UserLogin (Fundo Notes) in 469.5562ms
+2024-05-07 09:11:39.2151|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.RegistrationController.UserLogin (Fundo Notes)'
+2024-05-07 09:11:39.2151|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Registration/login - 200 - application/json;+charset=utf-8 471.9626ms
+2024-05-07 11:02:33.1162|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-07 11:02:33.2151|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-07 11:02:33.2151|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-07 11:02:33.2151|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-07 11:02:33.2151|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-07 11:02:33.2151|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes
+2024-05-07 11:02:33.7893|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-07 11:02:34.0630|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 271.7518ms
+2024-05-07 11:02:34.0701|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-07 11:02:34.2600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 189.7769ms
+2024-05-07 11:02:35.4315|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-07 11:02:35.4315|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-07 11:02:35.4315|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-07 11:02:35.4315|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-07 11:02:35.4405|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 5.8962ms
+2024-05-07 11:02:35.4405|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-07 11:02:35.4651|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-07 11:02:35.4651|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-07 11:02:35.4651|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 37.1850ms
+2024-05-07 11:02:35.4651|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 37.7083ms
+2024-05-07 11:02:35.5056|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-07 11:02:35.5056|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 72.6447ms
+2024-05-07 11:02:35.5404|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 95.8164ms
+2024-05-07 11:02:35.8096|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-07 11:02:35.9540|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 144.3588ms
+2024-05-07 11:03:40.7490|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Register - application/json 106
+2024-05-07 11:03:40.7611|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-07 11:03:40.8294|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.Registration.UserRegistrationModel) on controller Fundo_Notes.Controllers.RegistrationController (Fundo Notes).
+2024-05-07 11:03:42.5675|ERROR|Fundo_Notes.Controllers.RegistrationController|Invalid Request
+2024-05-07 11:03:42.5781|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModelLayer`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-07 11:03:42.5996|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes) in 1753.7906ms
+2024-05-07 11:03:42.5996|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-07 11:03:42.5996|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Register - 200 - application/json;+charset=utf-8 1852.8947ms
+2024-05-07 11:03:54.6407|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Register - application/json 107
+2024-05-07 11:03:54.6407|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-07 11:03:54.6407|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.Registration.UserRegistrationModel) on controller Fundo_Notes.Controllers.RegistrationController (Fundo Notes).
+2024-05-07 11:03:55.2622|INFO|Fundo_Notes.Controllers.RegistrationController|Registration successful
+2024-05-07 11:03:55.2622|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModelLayer`1[[ModelLayer.Registration.UserRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 11:03:55.2622|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes) in 623.5144ms
+2024-05-07 11:03:55.2622|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.RegistrationController.UserRegistration (Fundo Notes)'
+2024-05-07 11:03:55.2622|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Register - 200 - application/json;+charset=utf-8 629.6555ms
+2024-05-07 11:04:19.4588|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/login - application/json 60
+2024-05-07 11:04:19.4588|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.RegistrationController.UserLogin (Fundo Notes)'
+2024-05-07 11:04:19.4723|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(ModelLayer.Registration.UserLoginModel) on controller Fundo_Notes.Controllers.RegistrationController (Fundo Notes).
+2024-05-07 11:04:20.0094|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModelLayer`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-07 11:04:20.0094|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.RegistrationController.UserLogin (Fundo Notes) in 536.7954ms
+2024-05-07 11:04:20.0094|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.RegistrationController.UserLogin (Fundo Notes)'
+2024-05-07 11:04:20.0094|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/login - 200 - application/json;+charset=utf-8 552.6086ms

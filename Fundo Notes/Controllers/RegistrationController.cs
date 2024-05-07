@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Fundo_Notes.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/")]
     [ApiController]
     public class RegistrationController : ControllerBase
     {
@@ -47,6 +47,36 @@ namespace Fundo_Notes.Controllers
                     Success = false,
                     Message = ex.Message,
                     Data = null
+                };
+                return Ok(response);
+            }
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> UserLogin(UserLoginModel userLogin)
+        {
+            try
+            {
+
+                // Authenticate the user and generate JWT token
+                var Token = await _registrationbl.UserLogin(userLogin);
+                var response = new ResponseModelLayer<string>
+                {
+                    Success = true,
+                    Message = "User Login Successfully",
+                    Data = Token
+
+                };
+                return Ok(response);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Failed to login {ex.Message}");
+                var response = new ResponseModelLayer<string>
+                {
+                    Success = false,
+                    Message = ex.Message,
                 };
                 return Ok(response);
             }

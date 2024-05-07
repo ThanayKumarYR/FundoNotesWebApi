@@ -22,5 +22,9 @@ namespace BusinessLayer.Services
 
             return _registration.RegisterUser(userRegistrationModel);
         }
+        public Task<string> UserLogin(UserLoginModel userLogin)
+        {
+            return _registration.UserLogin(userLogin);
+        }
     }
 }

@@ -5,16 +5,20 @@ using Repository.GlobalExceptions;
 using RepositoryLayer.Interface;
 using System.Data;
 using RepositoryLayer.RegularExpressions;
+using Repository.Entity;
+using Repository.Interface;
 
 namespace RepositoryLayer.Services
 {
     public class RegistrationServiceRepositoryLayer : IRegistrationRepositoryLayer
     {
         private readonly DapperContext _context;
+        private readonly IAuthServiceRepositoryLayer _authService;
 
-        public RegistrationServiceRepositoryLayer(DapperContext context)
+        public RegistrationServiceRepositoryLayer(DapperContext context, IAuthServiceRepositoryLayer authService)
         {
             _context = context;
+            _authService = authService;
         }
         public async Task<bool> RegisterUser(UserRegistrationModel userRegModel)
         {
@@ -95,5 +99,37 @@ namespace RepositoryLayer.Services
             }
             return true;
         }
+
+        public async Task<string> UserLogin(UserLoginModel userLogin)
+        {
+
+            var parameters = new DynamicParameters();
+            parameters.Add("Email", userLogin.Email);
+
+
+
+            string query = @"SELECT * FROM Users WHERE Email = @Email;";
+
+
+            using (var connection = _context.CreateConnection())
+            {
+                var user = await connection.QueryFirstOrDefaultAsync<Registration>(query, parameters);
+
+                if (user == null)
+                {
+                    throw new NotFoundException($"User with email '{userLogin.Email}' not found.");
+                }
+
+                if (!BCrypt.Net.BCrypt.Verify(userLogin.Password, user.Password))
+                {
+                    throw new InvalidPasswordException($"User with Password '{userLogin.Password}' not Found.");
+                }
+
+                //if password enterd from user and password in db match then generate Token 
+                var token = _authService.GenerateJwtToken(user);
+                return token;
+            }
+        }
+
     }
 }

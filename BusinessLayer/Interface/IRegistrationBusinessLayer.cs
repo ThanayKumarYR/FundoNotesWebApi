@@ -10,5 +10,6 @@ namespace BusinessLayer.Interface
     public interface IRegistrationBusinessLayer
     {
         public Task<bool> RegisterUser(UserRegistrationModel userRegistrationModel);
+        public Task<string> UserLogin(UserLoginModel userLogin);
     }
 }
