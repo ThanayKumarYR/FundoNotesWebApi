@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Repository.Entity
-{
-    public class Registration
-    {
-        public int UserId { get; set; }
 
+namespace ModelLayer.User
+{
+    public class UserRegistrationModel
+    {
         [Required(ErrorMessage = "First name is required.")]
         public string? FirstName { get; set; }
 
