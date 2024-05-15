@@ -1,0 +1,237 @@
+2024-05-15 09:07:02.8690|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-15 09:07:03.6633|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-15 09:07:03.8075|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-15 09:07:03.8075|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-15 09:07:03.8075|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-15 09:07:03.8075|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-15 09:07:03.8075|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes
+2024-05-15 09:07:04.3134|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-15 09:07:04.6878|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 374.6491ms
+2024-05-15 09:07:04.6878|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-15 09:07:04.7867|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 94.6823ms
+2024-05-15 09:07:04.7990|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-15 09:07:04.7990|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-15 09:07:04.7990|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-15 09:07:04.7990|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-15 09:07:04.7990|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-15 09:07:04.7990|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.8435ms
+2024-05-15 09:07:04.8328|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-15 09:07:04.8328|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-15 09:07:04.8328|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 36.1741ms
+2024-05-15 09:07:04.8328|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 36.0022ms
+2024-05-15 09:07:04.8505|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-15 09:07:04.8505|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 51.9531ms
+2024-05-15 09:07:04.8815|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 81.6527ms
+2024-05-15 09:07:05.1946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-15 09:07:05.3825|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 187.8158ms
+2024-05-15 09:17:23.6677|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note - - -
+2024-05-15 09:17:23.7511|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-15 09:17:23.7835|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-15 09:17:25.1546|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from DB
+2024-05-15 09:17:25.1546|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:17:25.1745|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 1382.3451ms
+2024-05-15 09:17:25.1745|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-15 09:17:25.1745|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 1508.2783ms
+2024-05-15 09:21:42.0619|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/user/register - application/json 108
+2024-05-15 09:21:42.0668|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-15 09:21:42.0668|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.User.UserRegistrationModel) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-15 09:21:42.5955|INFO|Fundo_Notes.Controllers.UserController|Registration successful
+2024-05-15 09:21:42.5955|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[ModelLayer.User.UserRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 09:21:42.6014|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes) in 520.6024ms
+2024-05-15 09:21:42.6014|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-15 09:21:42.6014|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/user/register - 200 - application/json;+charset=utf-8 540.4828ms
+2024-05-15 09:22:17.3666|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Collaboration?noteid=3 - application/json 36
+2024-05-15 09:22:17.3666|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes)'
+2024-05-15 09:22:17.3851|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddCollaborator", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCollaborator(Int32, ModelLayer.CollaborationRequestModel) on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-15 09:22:17.4906|INFO|FundooNotes.Controllers.CollaborationController|Collabarator Added
+2024-05-15 09:22:17.4906|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:22:17.4906|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes) in 107.2266ms
+2024-05-15 09:22:17.4906|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes)'
+2024-05-15 09:22:17.4906|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Collaboration?noteid=3 - 200 - application/json;+charset=utf-8 126.7891ms
+2024-05-15 09:24:16.4423|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/Collaboration/1 - - -
+2024-05-15 09:24:16.4530|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:24:16.4530|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCollabbyid", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCollabbyid() on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-15 09:24:16.4797|INFO|FundooNotes.Controllers.CollaborationController|Collaborators Fetched Successfully
+2024-05-15 09:24:16.4797|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Collaboration.CollabInfoModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:24:16.4827|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes) in 22.4816ms
+2024-05-15 09:24:16.4827|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:24:16.4827|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/Collaboration/1 - 200 - application/json;+charset=utf-8 41.5478ms
+2024-05-15 09:26:59.6306|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-15 09:26:59.7487|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-15 09:26:59.7812|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-15 09:26:59.7812|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-15 09:26:59.7812|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-15 09:26:59.7812|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-15 09:26:59.7812|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes
+2024-05-15 09:27:00.1692|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-15 09:27:00.3363|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 165.1084ms
+2024-05-15 09:27:00.3363|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-15 09:27:00.5000|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 159.1949ms
+2024-05-15 09:27:00.5000|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-15 09:27:00.5000|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-15 09:27:00.5000|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-15 09:27:00.5192|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-15 09:27:00.5192|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-15 09:27:00.5790|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-15 09:27:00.5922|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-15 09:27:00.6081|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 102.3853ms
+2024-05-15 09:27:00.6081|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 102.7366ms
+2024-05-15 09:27:00.6081|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 93.1275ms
+2024-05-15 09:27:00.6212|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-15 09:27:00.6212|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 120.9529ms
+2024-05-15 09:27:00.6944|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 172.9486ms
+2024-05-15 09:27:00.9826|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-15 09:27:01.1888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 206.0614ms
+2024-05-15 09:27:32.0624|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/Collaboration - - -
+2024-05-15 09:27:32.0624|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-15 09:27:32.0736|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-05-15 09:27:32.0736|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/Collaboration - 401 0 - 11.6866ms
+2024-05-15 09:27:56.2048|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/Collaboration - - -
+2024-05-15 09:27:56.2959|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:27:56.3173|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCollabbyid", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCollabbyid() on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-15 09:27:56.6172|INFO|FundooNotes.Controllers.CollaborationController|Collaborators Fetched Successfully
+2024-05-15 09:27:56.6172|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Collaboration.CollabInfoModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:27:56.6323|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes) in 308.4577ms
+2024-05-15 09:27:56.6323|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:27:56.6323|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/Collaboration - 200 - application/json;+charset=utf-8 429.0659ms
+2024-05-15 09:28:27.7409|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Collaboration?noteid=3 - application/json 36
+2024-05-15 09:28:27.7409|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes)'
+2024-05-15 09:28:27.7557|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddCollaborator", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCollaborator(Int32, ModelLayer.CollaborationRequestModel) on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-15 09:28:31.9823|INFO|FundooNotes.Controllers.CollaborationController|Collabarator Added
+2024-05-15 09:28:31.9823|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:28:31.9823|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes) in 4234.1661ms
+2024-05-15 09:28:31.9823|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes)'
+2024-05-15 09:28:31.9823|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Collaboration?noteid=3 - 200 - application/json;+charset=utf-8 4250.9426ms
+2024-05-15 09:28:35.7929|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/Collaboration - - -
+2024-05-15 09:28:35.7929|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:28:35.7929|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCollabbyid", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCollabbyid() on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-15 09:28:35.7929|INFO|FundooNotes.Controllers.CollaborationController|Collaborators Fetched Successfully
+2024-05-15 09:28:35.7929|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Collaboration.CollabInfoModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:28:35.7929|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes) in 9.2453ms
+2024-05-15 09:28:35.7929|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:28:35.7929|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/Collaboration - 200 - application/json;+charset=utf-8 11.8246ms
+2024-05-15 09:28:52.9566|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/Collaboration - - -
+2024-05-15 09:28:52.9566|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:28:52.9566|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCollabbyid", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCollabbyid() on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-15 09:28:52.9625|INFO|FundooNotes.Controllers.CollaborationController|Collaborators Fetched Successfully
+2024-05-15 09:28:52.9625|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Collaboration.CollabInfoModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:28:52.9625|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes) in 4.4334ms
+2024-05-15 09:28:52.9625|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:28:52.9625|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/Collaboration - 200 - application/json;+charset=utf-8 7.3774ms
+2024-05-15 09:28:54.1402|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/Collaboration - - -
+2024-05-15 09:28:54.1402|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:28:54.1402|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCollabbyid", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCollabbyid() on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-15 09:28:54.1453|INFO|FundooNotes.Controllers.CollaborationController|Collaborators Fetched Successfully
+2024-05-15 09:28:54.1453|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Collaboration.CollabInfoModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:28:54.1453|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes) in 4.4559ms
+2024-05-15 09:28:54.1453|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:28:54.1453|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/Collaboration - 200 - application/json;+charset=utf-8 7.5425ms
+2024-05-15 09:30:11.5388|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 DELETE https://localhost:7037/api/Collaboration/1 - - -
+2024-05-15 09:30:11.5388|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.RemoveCollaborator (Fundo Notes)'
+2024-05-15 09:30:11.5388|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RemoveCollaborator", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveCollaborator(Int32) on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-15 09:30:11.5678|INFO|FundooNotes.Controllers.CollaborationController|Collaborator removed successfully
+2024-05-15 09:30:11.5678|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:30:11.5678|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.RemoveCollaborator (Fundo Notes) in 21.5111ms
+2024-05-15 09:30:11.5678|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.RemoveCollaborator (Fundo Notes)'
+2024-05-15 09:30:11.5678|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 DELETE https://localhost:7037/api/Collaboration/1 - 200 - application/json;+charset=utf-8 30.8002ms
+2024-05-15 09:30:22.0728|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/Collaboration - - -
+2024-05-15 09:30:22.0728|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:30:22.0728|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCollabbyid", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCollabbyid() on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-15 09:30:22.0728|INFO|FundooNotes.Controllers.CollaborationController|Collaborators Fetched Successfully
+2024-05-15 09:30:22.0728|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Collaboration.CollabInfoModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:30:22.0728|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes) in 10.947ms
+2024-05-15 09:30:22.0728|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-15 09:30:22.0728|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/Collaboration - 200 - application/json;+charset=utf-8 13.7539ms
+2024-05-15 10:53:25.0998|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-15 10:53:26.0439|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-15 10:53:26.1851|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-15 10:53:26.1857|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-15 10:53:26.1857|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-15 10:53:26.1857|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-15 10:53:26.1857|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes
+2024-05-15 10:53:27.5289|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-15 10:53:28.0815|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 554.0524ms
+2024-05-15 10:53:28.0815|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-15 10:53:28.1942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 108.0096ms
+2024-05-15 10:53:28.1942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-15 10:53:28.1942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-15 10:53:28.1942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-15 10:53:28.1942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-15 10:53:28.2073|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-15 10:53:28.2073|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 7.0365ms
+2024-05-15 10:53:28.2476|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-15 10:53:28.2530|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-15 10:53:28.2530|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 55.8617ms
+2024-05-15 10:53:28.2530|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 55.6981ms
+2024-05-15 10:53:28.2859|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-15 10:53:28.2899|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 88.8085ms
+2024-05-15 10:53:28.3264|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 119.0627ms
+2024-05-15 10:53:28.6768|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-15 10:53:28.8235|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 146.6050ms
+2024-05-15 10:57:59.8383|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/user/register - application/json 113
+2024-05-15 10:57:59.8586|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-15 10:57:59.9199|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.User.UserRegistrationModel) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-15 10:58:03.5466|ERROR|Fundo_Notes.Controllers.UserController|Invalid Request
+2024-05-15 10:58:03.5466|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:58:03.5791|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes) in 3640.9695ms
+2024-05-15 10:58:03.5849|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-15 10:58:03.5849|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/user/register - 200 - application/json;+charset=utf-8 3749.3873ms
+2024-05-15 11:00:36.1071|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/user/register - application/json 113
+2024-05-15 11:00:36.1172|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-15 11:00:36.1172|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.User.UserRegistrationModel) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-15 11:00:36.4339|INFO|Fundo_Notes.Controllers.UserController|Registration successful
+2024-05-15 11:00:36.4339|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[ModelLayer.User.UserRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 11:00:36.4339|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes) in 323.1602ms
+2024-05-15 11:00:36.4339|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-15 11:00:36.4339|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/user/register - 200 - application/json;+charset=utf-8 335.8302ms
+2024-05-15 11:03:34.3568|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-15 11:03:35.2074|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-15 11:03:35.3466|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-15 11:03:35.3469|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-15 11:03:35.3469|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-15 11:03:35.3469|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-15 11:03:35.3469|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes
+2024-05-15 11:03:35.9530|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-15 11:03:36.4083|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 455.3121ms
+2024-05-15 11:03:36.4083|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-15 11:03:36.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 102.0400ms
+2024-05-15 11:03:36.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-15 11:03:36.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-15 11:03:36.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-15 11:03:36.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-15 11:03:36.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-15 11:03:36.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.6312ms
+2024-05-15 11:03:36.5503|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-15 11:03:36.5503|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-15 11:03:36.5503|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-15 11:03:36.5526|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 35.7768ms
+2024-05-15 11:03:36.5526|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 35.8365ms
+2024-05-15 11:03:36.5526|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 35.8628ms
+2024-05-15 11:03:36.5686|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 51.7802ms
+2024-05-15 11:03:36.8578|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-15 11:03:37.0641|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 206.2208ms
+2024-05-15 11:04:07.6975|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/user/login?email=saanuraga108%40gmail.com&password=Thanay%40123 - - 0
+2024-05-15 11:04:07.6975|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UserLogin (Fundo Notes)'
+2024-05-15 11:04:07.7587|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(System.String, System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-15 11:04:10.7393|INFO|Fundo_Notes.Controllers.UserController|User Login Successfully
+2024-05-15 11:04:10.7572|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 11:04:10.7838|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UserLogin (Fundo Notes) in 3007.3114ms
+2024-05-15 11:04:10.7838|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UserLogin (Fundo Notes)'
+2024-05-15 11:04:10.7861|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/user/login?email=saanuraga108%40gmail.com&password=Thanay%40123 - 200 - application/json;+charset=utf-8 3088.6393ms
+2024-05-15 11:05:45.4753|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/user/forgotpassword?Email=saanuraga108%40gmail.com - - 0
+2024-05-15 11:05:45.4753|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-15 11:05:45.4980|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-15 11:05:45.5068|INFO|Fundo_Notes.Controllers.UserController|Email Sent
+2024-05-15 11:05:49.3893|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 11:05:49.3893|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes) in 3891.5243ms
+2024-05-15 11:05:49.3893|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-15 11:05:49.3893|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/user/forgotpassword?Email=saanuraga108%40gmail.com - 200 - application/json;+charset=utf-8 3916.4204ms
+2024-05-15 11:06:41.7097|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/user/resetPassword?otp=526919&Newpassword=Thanay%40123 - - 0
+2024-05-15 11:06:41.7097|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.ResetPassword (Fundo Notes)'
+2024-05-15 11:06:41.7097|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ResetPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ResetPassword(System.String, System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-15 11:06:41.7297|INFO|Fundo_Notes.Controllers.UserController|Password reset successful
+2024-05-15 11:06:42.2417|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 11:06:42.2417|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.ResetPassword (Fundo Notes) in 521.8589ms
+2024-05-15 11:06:42.2417|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.ResetPassword (Fundo Notes)'
+2024-05-15 11:06:42.2417|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/user/resetPassword?otp=526919&Newpassword=Thanay%40123 - 200 - application/json;+charset=utf-8 533.9195ms

@@ -9,6 +9,7 @@ namespace Repository.Interface
 {
     public interface IAuthServiceRepositoryLayer
     {
-        public string GenerateJwtToken(Registration user);
+        public string GenerateJwtToken(UserEntity user);
+        public string GenerateJwtTokenForgetPassword(UserEntity user);
     }
 }

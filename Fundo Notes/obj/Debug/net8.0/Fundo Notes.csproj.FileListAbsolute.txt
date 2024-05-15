@@ -78,3 +78,5 @@ C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\NLog.confi
 C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\NLog.dll
 C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\NLog.Extensions.Logging.dll
 C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
+C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Thanay\source\repos\Fundo Notes\Fundo Notes\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
