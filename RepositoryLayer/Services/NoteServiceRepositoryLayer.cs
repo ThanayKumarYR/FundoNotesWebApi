@@ -2,10 +2,10 @@
 using ModelLayer.Notes;
 using Repository.Context;
 using System.Data;
-using System.Text;
 using Repository.Interface;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Data.SqlClient;
+using Newtonsoft.Json;
 
 namespace Repository.Service
 {
@@ -19,9 +19,20 @@ namespace Repository.Service
             _Context = context;
             _cache = cache;
         }
+
+        private async Task EnsureNotesTableExistsAsync()
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 0);
+
+            using (var connection = _Context.CreateConnection())
+            {
+                await connection.ExecuteAsync("ManageNotes", parameters, commandType: CommandType.StoredProcedure);
+            }
+        }
+
         public bool RemoveData(string key)
         {
-
             var cachedData = _cache.GetString(key);
             if (cachedData != null)
             {
@@ -31,105 +42,99 @@ namespace Repository.Service
             return false;
         }
 
-        public async Task CreateNote(CreateNoteRequest createNoteRequest, int Userid,int LabelId)
+        public async Task CreateNote(CreateNoteRequest createNoteRequest, int userId, int labelId)
         {
-            var parameter = new DynamicParameters();
-            parameter.Add("Description", createNoteRequest.Description, DbType.String);
-            parameter.Add("Title", createNoteRequest.Title, DbType.String);
-            parameter.Add("Colour", createNoteRequest.Colour, DbType.String);
-            parameter.Add("IsArchived", createNoteRequest.IsArchived, DbType.Boolean);
-            parameter.Add("IsDeleted", createNoteRequest.IsDeleted, DbType.Boolean);
-            parameter.Add("UserId", Userid, DbType.Int64);
-            if (LabelId == default)
-            {
-                parameter.Add("LabelId", null);
-            }
-            else
-            {
-                parameter.Add("LabelId", LabelId, DbType.Int64);
-            }
+            await EnsureNotesTableExistsAsync();
 
-            var insertquery = @"INSERT INTO Notes (Description, [Title], Colour, IsArchived, IsDeleted, UserId,LabelId) VALUES (@Description, @Title, @Colour, @IsArchived, @IsDeleted, @UserId, @LabelId);";
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 1);
+            parameters.Add("Description", createNoteRequest.Description, DbType.String);
+            parameters.Add("Title", createNoteRequest.Title, DbType.String);
+            parameters.Add("Colour", createNoteRequest.Colour, DbType.String);
+            parameters.Add("IsArchived", createNoteRequest.IsArchived, DbType.Boolean);
+            parameters.Add("IsDeleted", createNoteRequest.IsDeleted, DbType.Boolean);
+            parameters.Add("UserId", userId, DbType.Int32);
+            parameters.Add("LabelId", labelId == default ? (int?)null : labelId, DbType.Int32);
 
             using (var connection = _Context.CreateConnection())
             {
-                bool tableExists = await connection.QueryFirstOrDefaultAsync<bool>(
-                    @"
-                    SELECT COUNT(*)
-                    FROM INFORMATION_SCHEMA.TABLES
-                    WHERE TABLE_NAME = 'Notes';
-                    "
-                );
-
-                if (!tableExists)
-                {
-                    await connection.ExecuteAsync(@" CREATE TABLE Notes (
-                                                    NoteId INT IDENTITY(1, 1) PRIMARY KEY,
-                                                    Title NVARCHAR(MAX) NOT NULL,
-                                                    Description NVARCHAR(MAX) NOT NULL,
-                                                    Colour NVARCHAR(MAX) NOT NULL,
-                                                    IsArchived BIT NOT NULL,
-                                                    IsDeleted BIT NOT NULL,
-                                                    UserId INT FOREIGN KEY REFERENCES Users(UserId) NOT NULL,
-                                                    LabelId INT FOREIGN KEY REFERENCES Label(LabelId)
-                                                  );"
-                    );
-                }
-                await connection.ExecuteAsync(insertquery, parameter);
-
+                await connection.ExecuteAsync("ManageNotes", parameters, commandType: CommandType.StoredProcedure);
             }
-            await _cache.RemoveAsync($"Notes_{Userid}");
+            await _cache.RemoveAsync($"Notes_{userId}");
+            await _cache.RemoveAsync($"ArchivedNotes_{userId}");
+            await _cache.RemoveAsync($"DeletedNotes_{userId}");
         }
 
-        public async Task UpdateNote(int NoteId, int UserId, CreateNoteRequest updatedNote)
+        public async Task UpdateNote(int noteId, int userId, CreateNoteRequest updatedNote)
         {
-            var parameter = new DynamicParameters();
-            parameter.Add("Description", updatedNote.Description, DbType.String);
-            parameter.Add("Title", updatedNote.Title, DbType.String);
-            parameter.Add("Colour", updatedNote.Colour, DbType.String);
-            parameter.Add("IsArchived", updatedNote.IsArchived, DbType.Boolean);
-            parameter.Add("IsDeleted", updatedNote.IsDeleted, DbType.Boolean);
-            parameter.Add("NoteId", NoteId, DbType.Int64);
-            parameter.Add("UserId", UserId, DbType.Int64);
-            var query = "UPDATE Notes SET Description=@Description,Title=@Title,Colour= @Colour,IsArchived=@IsArchived,IsDeleted=@Isdeleted WHERE UserId=@UserId AND NoteId = @NoteId";
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 2);
+            parameters.Add("NoteId", noteId, DbType.Int32);
+            parameters.Add("UserId", userId, DbType.Int32);
+            parameters.Add("Description", updatedNote.Description, DbType.String);
+            parameters.Add("Title", updatedNote.Title, DbType.String);
+            parameters.Add("Colour", updatedNote.Colour, DbType.String);
+            parameters.Add("IsArchived", updatedNote.IsArchived, DbType.Boolean);
+            parameters.Add("IsDeleted", updatedNote.IsDeleted, DbType.Boolean);
+
             using (var connection = _Context.CreateConnection())
             {
-
-                var note = await connection.ExecuteAsync(query, parameter);
-
+                await connection.ExecuteAsync("ManageNotes", parameters, commandType: CommandType.StoredProcedure);
             }
-            await _cache.RemoveAsync($"Notes_{UserId}");
 
-
+            await _cache.RemoveAsync($"Notes_{userId}");
+            await _cache.RemoveAsync($"ArchivedNotes_{userId}");
+            await _cache.RemoveAsync($"DeletedNotes_{userId}");
         }
 
         public async Task DeleteNote(int noteId, int userId)
         {
-            var parameter = new DynamicParameters();
-            parameter.Add("Noteid", noteId, DbType.Int64);
-            parameter.Add("userid", userId, DbType.Int64);
-            var query = "DELETE FROM Notes where NoteId=@noteId and UserId = @userId;";
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 3);
+            parameters.Add("NoteId", noteId, DbType.Int32);
+            parameters.Add("UserId", userId, DbType.Int32);
+
             using (var connection = _Context.CreateConnection())
             {
-                await connection.ExecuteAsync(query, parameter);
-
+                await connection.ExecuteAsync("ManageNotes", parameters, commandType: CommandType.StoredProcedure);
             }
 
             await _cache.RemoveAsync($"Notes_{userId}");
+            await _cache.RemoveAsync($"ArchivedNotes_{userId}");
+            await _cache.RemoveAsync($"DeletedNotes_{userId}");
 
         }
+
         public async Task<IEnumerable<NoteResponse>> GetAllNoteAsync(int userId)
         {
-            var selectQuery = "SELECT * FROM Notes WHERE UserId = @UserId AND IsDeleted = 0 AND IsArchived = 0 AND LabelId is null";
+            string cacheKey = $"Notes_{userId}";
+            string cachedNotes = await _cache.GetStringAsync(cacheKey);
+
+            if (!string.IsNullOrEmpty(cachedNotes))
+            {
+                return JsonConvert.DeserializeObject<IEnumerable<NoteResponse>>(cachedNotes);
+            }
+
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 4);
+            parameters.Add("UserId", userId, DbType.Int32);
 
             using (var connection = _Context.CreateConnection())
             {
                 try
                 {
-                    var notes = await connection.QueryAsync<NoteResponse>(selectQuery, new { UserId = userId });
+                    var notes = await connection.QueryAsync<NoteResponse>("ManageNotes", parameters, commandType: CommandType.StoredProcedure);
                     var notesList = notes.Reverse().ToList();
-                    if (notesList.Count() != 0) return notesList;
-                    else throw new ApplicationException("No Notes to display");
+
+                    if (notesList.Any())
+                    {
+                        await _cache.SetStringAsync(cacheKey, JsonConvert.SerializeObject(notesList));
+                        return notesList;
+                    }
+                    else
+                    {
+                        throw new ApplicationException("No Notes to display");
+                    }
                 }
                 catch (SqlException ex)
                 {
@@ -137,19 +142,37 @@ namespace Repository.Service
                 }
             }
         }
+
         public async Task<IEnumerable<NoteResponse>> GetAllArchivedNoteAsync(int userId)
         {
-            var selectQuery = "SELECT * FROM Notes WHERE UserId = @UserId AND IsDeleted = 0 AND IsArchived = 1";
+            string cacheKey = $"ArchivedNotes_{userId}";
+            string cachedNotes = await _cache.GetStringAsync(cacheKey);
 
+            if (!string.IsNullOrEmpty(cachedNotes))
+            {
+                return JsonConvert.DeserializeObject<IEnumerable<NoteResponse>>(cachedNotes);
+            }
+
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 5);
+            parameters.Add("UserId", userId, DbType.Int32);
 
             using (var connection = _Context.CreateConnection())
             {
                 try
                 {
-                    var notes = await connection.QueryAsync<NoteResponse>(selectQuery, new { UserId = userId });
+                    var notes = await connection.QueryAsync<NoteResponse>("ManageNotes", parameters, commandType: CommandType.StoredProcedure);
                     var notesList = notes.Reverse().ToList();
-                    if (notesList.Count() != 0) return notesList;
-                    else throw new ApplicationException("No Notes to display in the archive");
+
+                    if (notesList.Any())
+                    {
+                        await _cache.SetStringAsync(cacheKey, JsonConvert.SerializeObject(notesList));
+                        return notesList;
+                    }
+                    else
+                    {
+                        throw new ApplicationException("No Notes to display in the archive");
+                    }
                 }
                 catch (SqlException ex)
                 {
@@ -157,18 +180,37 @@ namespace Repository.Service
                 }
             }
         }
+
         public async Task<IEnumerable<NoteResponse>> GetAllDeletedNoteAsync(int userId)
         {
-            var selectQuery = "SELECT * FROM Notes WHERE UserId = @UserId AND IsDeleted = 1";
+            string cacheKey = $"DeletedNotes_{userId}";
+            string cachedNotes = await _cache.GetStringAsync(cacheKey);
+
+            if (!string.IsNullOrEmpty(cachedNotes))
+            {
+                return JsonConvert.DeserializeObject<IEnumerable<NoteResponse>>(cachedNotes);
+            }
+
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 6);
+            parameters.Add("UserId", userId, DbType.Int32);
 
             using (var connection = _Context.CreateConnection())
             {
                 try
                 {
-                    var notes = await connection.QueryAsync<NoteResponse>(selectQuery, new { UserId = userId });
+                    var notes = await connection.QueryAsync<NoteResponse>("ManageNotes", parameters, commandType: CommandType.StoredProcedure);
                     var notesList = notes.Reverse().ToList();
-                    if (notesList.Count() != 0) return notesList;
-                    else throw new ApplicationException("No Notes to display in the Trash");
+
+                    if (notesList.Any())
+                    {
+                        await _cache.SetStringAsync(cacheKey, JsonConvert.SerializeObject(notesList));
+                        return notesList;
+                    }
+                    else
+                    {
+                        throw new ApplicationException("No Notes to display in the Trash");
+                    }
                 }
                 catch (SqlException ex)
                 {

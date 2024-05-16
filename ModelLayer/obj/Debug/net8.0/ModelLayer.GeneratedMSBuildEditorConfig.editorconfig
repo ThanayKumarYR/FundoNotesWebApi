@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ModelLayer
-build_property.ProjectDir = C:\Users\Thanay\source\repos\Fundo Notes\ModelLayer\
+build_property.ProjectDir = C:\Users\Thanay\source\repos\FundoNotesWebApi\ModelLayer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

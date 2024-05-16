@@ -14,90 +14,82 @@ namespace Repository.Service
         {
             _Context = context;
         }
-        public async Task CreateLabel(CreateLabel label, int UserId)
+
+        private async Task EnsureLabelTableExistsAsync()
         {
-
-            var parameter = new DynamicParameters();
-            parameter.Add("LabelName", label.LabelName, DbType.String);
-            parameter.Add("UserId", UserId, DbType.Int64);
-
-            var query = "INSERT INTO Label (LabelName,UserId) VALUES (@LabelName,@UserId);";
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 0);
 
             using (var connection = _Context.CreateConnection())
             {
-                bool tableExists = await connection.QueryFirstOrDefaultAsync<bool>(
-                    @"
-                    SELECT COUNT(*)
-                    FROM INFORMATION_SCHEMA.TABLES
-                    WHERE TABLE_NAME = 'Label';
-                     "
-                );
-
-                if (!tableExists)
-                {
-                    await connection.ExecuteAsync(@"CREATE TABLE Label(
-                                                    LabelId INT IDENTITY(1, 1) PRIMARY KEY,
-                                                    LabelName NVARCHAR(MAX) NOT NULL,
-                                                    UserId INT FOREIGN KEY REFERENCES Users(UserId) NOT NULL
-                                                );"
-                    );
-                }
-                await connection.ExecuteAsync(query, parameter);
+                await connection.ExecuteAsync("ManageLabelsAndNotes", parameters, commandType: CommandType.StoredProcedure);
             }
         }
-        public async Task DeleteLabel(int LabelId)
+
+        public async Task CreateLabel(CreateLabel label, int userId)
         {
-            var parameter = new DynamicParameters();
-            parameter.Add("LabelId", LabelId, DbType.Int64);
+            await EnsureLabelTableExistsAsync();
 
-            var delete_notes_query = "DELETE FROM Notes WHERE LabelId = @LabelId;";
-
-            var query = "DELETE FROM Label WHERE LabelId = @LabelId;";
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 1);
+            parameters.Add("LabelName", label.LabelName, DbType.String);
+            parameters.Add("UserId", userId, DbType.Int64);
 
             using (var connection = _Context.CreateConnection())
             {
-                await connection.ExecuteAsync(delete_notes_query, parameter);
-                await connection.ExecuteAsync(query, parameter);
+                await connection.ExecuteAsync("ManageLabelsAndNotes", parameters, commandType: CommandType.StoredProcedure);
             }
         }
-        public async Task UpdateLabel(CreateLabel label, int LabelId, int UserId)
-        {
-            var parameter = new DynamicParameters();
-            parameter.Add("LabelId", LabelId, DbType.Int64);
-            parameter.Add("LabelName", label.LabelName, DbType.String);
-            parameter.Add("UserId", UserId, DbType.Int64);
 
-            var query = "UPDATE Label SET LabelName =@LabelName,UserId = @UserId WHERE LabelId = @LabelId;";
+        public async Task DeleteLabel(int labelId)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 2);
+            parameters.Add("LabelId", labelId, DbType.Int64);
 
             using (var connection = _Context.CreateConnection())
             {
-                await connection.ExecuteAsync(query, parameter);
+                await connection.ExecuteAsync("ManageLabelsAndNotes", parameters, commandType: CommandType.StoredProcedure);
             }
         }
+
+        public async Task UpdateLabel(CreateLabel label, int labelId, int userId)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 3);
+            parameters.Add("LabelId", labelId, DbType.Int64);
+            parameters.Add("LabelName", label.LabelName, DbType.String);
+            parameters.Add("UserId", userId, DbType.Int64);
+
+            using (var connection = _Context.CreateConnection())
+            {
+                await connection.ExecuteAsync("ManageLabelsAndNotes", parameters, commandType: CommandType.StoredProcedure);
+            }
+        }
+
         public async Task<IEnumerable<LabelEntity>> GetAllLabels()
         {
-
-
-            var query = "SELECT * FROM Label;";
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 4);
 
             using (var connection = _Context.CreateConnection())
             {
-                var Label = await connection.QueryAsync<LabelEntity>(query);
-                return Label.ToList();
+                var labels = await connection.QueryAsync<LabelEntity>("ManageLabelsAndNotes", parameters, commandType: CommandType.StoredProcedure);
+                return labels.ToList();
             }
         }
+
         public async Task<IEnumerable<object>> GetAllNotesbyLabelId(int LabelId)
         {
-            var parameter = new DynamicParameters();
-            parameter.Add("LabelId", LabelId, DbType.Int64);
+            var parameters = new DynamicParameters();
+            parameters.Add("Operation", 5);
+            parameters.Add("LabelId", LabelId, DbType.Int64);
 
-            var query = "SELECT n.NoteId,n.Title AS Notestitle,n.Description AS NotesDescription,n.Colour,l.LabelId,l.LabelName FROM Notes n INNER JOIN Label l ON n.LabelId = l.LabelId WHERE n.IsArchived = 0 AND n.IsDeleted = 0;";
             using (var connection = _Context.CreateConnection())
             {
-                var Label = await connection.QueryAsync<object>(query, parameter);
-                return Label.ToList();
+                var notes = await connection.QueryAsync<object>("ManageLabelsAndNotes", parameters, commandType: CommandType.StoredProcedure);
+                return notes.ToList();
             }
         }
-
     }
 }
