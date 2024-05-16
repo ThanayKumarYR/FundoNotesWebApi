@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wpxgkoQPiecUqLMsGzE6w/VTgKHCqDAl2iIE02BwQGPghdSL1oL/7qLiSJOTmljf2pY0ZSF9JyujAZrl51Ubyg==",
+  "dgSpecHash": "zZMMIGXu7UHYYUiO9Pmb8SUVlzjIaUF15UrwxeohxBDtY/dJb6k0oEuG3GHbd5oIB/Bc0tE8Qa35anmJsvRl8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Thanay\\source\\repos\\Fundo Notes\\ModelLayer\\ModelLayer.csproj",
+  "projectFilePath": "C:\\Users\\Thanay\\source\\repos\\FundoNotesWebApi\\ModelLayer\\ModelLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thanay\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Thanay\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

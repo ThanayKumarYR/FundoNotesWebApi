@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thanay\\source\\repos\\Fundo Notes\\ModelLayer\\ModelLayer.csproj": {}
+    "C:\\Users\\Thanay\\source\\repos\\FundoNotesWebApi\\ModelLayer\\ModelLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thanay\\source\\repos\\Fundo Notes\\ModelLayer\\ModelLayer.csproj": {
+    "C:\\Users\\Thanay\\source\\repos\\FundoNotesWebApi\\ModelLayer\\ModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thanay\\source\\repos\\Fundo Notes\\ModelLayer\\ModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Thanay\\source\\repos\\FundoNotesWebApi\\ModelLayer\\ModelLayer.csproj",
         "projectName": "ModelLayer",
-        "projectPath": "C:\\Users\\Thanay\\source\\repos\\Fundo Notes\\ModelLayer\\ModelLayer.csproj",
+        "projectPath": "C:\\Users\\Thanay\\source\\repos\\FundoNotesWebApi\\ModelLayer\\ModelLayer.csproj",
         "packagesPath": "C:\\Users\\Thanay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thanay\\source\\repos\\Fundo Notes\\ModelLayer\\obj\\",
+        "outputPath": "C:\\Users\\Thanay\\source\\repos\\FundoNotesWebApi\\ModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thanay\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
