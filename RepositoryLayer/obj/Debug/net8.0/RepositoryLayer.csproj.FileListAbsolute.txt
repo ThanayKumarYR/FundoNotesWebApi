@@ -14,3 +14,19 @@ C:\Users\Thanay\source\repos\Fundo Notes\RepositoryLayer\obj\Debug\net8.0\Reposi
 C:\Users\Thanay\source\repos\Fundo Notes\RepositoryLayer\obj\Debug\net8.0\refint\RepositoryLayer.dll
 C:\Users\Thanay\source\repos\Fundo Notes\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.pdb
 C:\Users\Thanay\source\repos\Fundo Notes\RepositoryLayer\obj\Debug\net8.0\ref\RepositoryLayer.dll
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.deps.json
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.dll
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.pdb
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\bin\Debug\net8.0\ModelLayer.dll
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\bin\Debug\net8.0\ModelLayer.pdb
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.AssemblyReference.cache
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfoInputs.cache
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfo.cs
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.sourcelink.json
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\Reposito.A0A61804.Up2Date
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.dll
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\refint\RepositoryLayer.dll
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.pdb
+C:\Users\Thanay\Source\Repos\FundoNotesWebApi\RepositoryLayer\obj\Debug\net8.0\ref\RepositoryLayer.dll

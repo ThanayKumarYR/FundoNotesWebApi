@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KbZdFXQfrJsW+imifCTzGoyMehLJ+tPoIiLIm/zNh0Zqmfwq1ID1hPGVnbUy73IxkBgUSkzLMQvtaoQzShml1A==",
+  "dgSpecHash": "fQiEIHZCHBlI1kD7QyTVwsbcm086O62WEr9j9FGlQea+D/OehmXI0/joeit7hr2uUB5cgkfAkXdapDym3Q6gpw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Thanay\\source\\repos\\FundoNotesWebApi\\Fundo Notes\\Fundo Notes.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,12 @@
     "C:\\Users\\Thanay\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Thanay\\source\\repos\\FundoNotesWebApi\\Fundo Notes\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",
