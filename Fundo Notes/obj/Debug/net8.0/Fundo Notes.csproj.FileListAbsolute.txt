@@ -162,3 +162,5 @@ C:\Users\Thanay\Source\Repos\FundoNotesWebApi\Fundo Notes\obj\Debug\net8.0\refin
 C:\Users\Thanay\Source\Repos\FundoNotesWebApi\Fundo Notes\obj\Debug\net8.0\Fundo Notes.pdb
 C:\Users\Thanay\Source\Repos\FundoNotesWebApi\Fundo Notes\obj\Debug\net8.0\Fundo Notes.genruntimeconfig.cache
 C:\Users\Thanay\Source\Repos\FundoNotesWebApi\Fundo Notes\obj\Debug\net8.0\ref\Fundo Notes.dll
+C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes\bin\Debug\net8.0\StackExchange.Redis.dll
