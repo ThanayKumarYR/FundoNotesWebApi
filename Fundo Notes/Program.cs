@@ -1,10 +1,9 @@
-
-
 using BusinessLayer.Interface;
 using BusinessLayer.Services;
 using BussinesLayer.Interface;
 using BussinesLayer.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -47,8 +46,15 @@ builder.Services.AddScoped<ILabelBusinessLayer, LabelRepositoryBusinessLayer>();
 builder.Services.AddScoped<ICollaborationRL, CollaborationService>();
 builder.Services.AddScoped<ICollaboration, CollaborationServicebl>();
 
+// Add Redis distributed cache
+builder.Services.AddSingleton<IDistributedCache, CacheService>(sp =>
+{
+    var redisConfiguration = builder.Configuration.GetSection("Redis")["RedisConnection"];
+    return new CacheService(redisConfiguration);
+});
 
-builder.Services.AddDistributedMemoryCache();
+
+//builder.Services.AddDistributedMemoryCache();
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:SecretKey"]);
 

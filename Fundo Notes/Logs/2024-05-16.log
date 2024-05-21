@@ -1,0 +1,430 @@
+2024-05-16 13:09:22.7218|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-16 13:09:22.9796|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-16 13:09:23.0282|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-16 13:09:23.0282|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-16 13:09:23.0282|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-16 13:09:23.0282|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-16 13:09:23.0282|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes
+2024-05-16 13:09:27.9983|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-16 13:09:28.4177|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 420.0097ms
+2024-05-16 13:09:28.4177|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-16 13:09:28.5865|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 163.1708ms
+2024-05-16 13:09:28.9712|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-16 13:09:28.9712|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-16 13:09:28.9712|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-16 13:09:29.0108|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-16 13:09:29.0108|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-16 13:09:29.0108|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 42.3657ms
+2024-05-16 13:09:29.0108|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 41.9355ms
+2024-05-16 13:09:29.0448|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-16 13:09:29.0448|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 74.1079ms
+2024-05-16 13:09:29.0691|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-16 13:09:29.0691|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 7.9599ms
+2024-05-16 13:09:29.1265|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-16 13:09:29.2345|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 107.8838ms
+2024-05-16 13:09:29.9456|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-16 13:09:30.3392|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 393.4689ms
+2024-05-16 13:19:15.6696|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/label - application/json 30
+2024-05-16 13:19:15.7647|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.AddLabel (Fundo Notes)'
+2024-05-16 13:19:15.8120|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddLabel", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddLabel(ModelLayer.Label.CreateLabel) on controller FundooNotes.Controllers.LabelController (Fundo Notes).
+2024-05-16 13:19:16.6349|INFO|FundooNotes.Controllers.LabelController|Label created 
+2024-05-16 13:19:16.6349|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:19:16.6534|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.AddLabel (Fundo Notes) in 830.6861ms
+2024-05-16 13:19:16.6534|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.AddLabel (Fundo Notes)'
+2024-05-16 13:19:16.6534|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/label - 200 - application/json;+charset=utf-8 985.0448ms
+2024-05-16 13:20:26.4149|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/label - - -
+2024-05-16 13:20:26.4149|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.GetAllLabel (Fundo Notes)'
+2024-05-16 13:20:26.4149|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllLabel", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLabel() on controller FundooNotes.Controllers.LabelController (Fundo Notes).
+2024-05-16 13:20:26.4303|INFO|FundooNotes.Controllers.LabelController|getnotesbyid
+2024-05-16 13:20:26.5289|INFO|FundooNotes.Controllers.LabelController|All Labels retrieved successfully
+2024-05-16 13:20:26.5289|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[Repository.Entity.LabelEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:20:26.5289|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.GetAllLabel (Fundo Notes) in 105.1213ms
+2024-05-16 13:20:26.5289|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.GetAllLabel (Fundo Notes)'
+2024-05-16 13:20:26.5289|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/label - 200 - application/json;+charset=utf-8 118.8093ms
+2024-05-16 13:20:45.8110|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/label/2 - - -
+2024-05-16 13:20:45.8110|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.GetAllNotebyLabelId (Fundo Notes)'
+2024-05-16 13:20:45.8286|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllNotebyLabelId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotebyLabelId(Int32) on controller FundooNotes.Controllers.LabelController (Fundo Notes).
+2024-05-16 13:20:45.8448|INFO|FundooNotes.Controllers.LabelController|Label retrieved successfully by its id
+2024-05-16 13:20:45.8448|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:20:45.8660|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.GetAllNotebyLabelId (Fundo Notes) in 36.5104ms
+2024-05-16 13:20:45.8660|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.GetAllNotebyLabelId (Fundo Notes)'
+2024-05-16 13:20:45.8660|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/label/2 - 200 - application/json;+charset=utf-8 55.4448ms
+2024-05-16 13:21:39.0309|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/Collaboration - - -
+2024-05-16 13:21:39.0309|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-16 13:21:39.0309|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCollabbyid", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCollabbyid() on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-16 13:21:39.1248|INFO|FundooNotes.Controllers.CollaborationController|Collaborators Fetched Successfully
+2024-05-16 13:21:39.1248|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Collaboration.CollabInfoModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:21:39.1248|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes) in 88.3525ms
+2024-05-16 13:21:39.1248|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-16 13:21:39.1248|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/Collaboration - 200 - application/json;+charset=utf-8 97.0247ms
+2024-05-16 13:22:04.5584|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/Collaboration?noteid=7 - application/json 36
+2024-05-16 13:22:04.5584|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes)'
+2024-05-16 13:22:04.5724|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddCollaborator", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCollaborator(Int32, ModelLayer.CollaborationRequestModel) on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-16 13:22:08.9715|INFO|FundooNotes.Controllers.CollaborationController|Collabarator Added
+2024-05-16 13:22:08.9715|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:22:08.9715|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes) in 4401.3067ms
+2024-05-16 13:22:08.9715|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes)'
+2024-05-16 13:22:08.9715|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/Collaboration?noteid=7 - 200 - application/json;+charset=utf-8 4417.9081ms
+2024-05-16 13:22:16.1886|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/Collaboration - - -
+2024-05-16 13:22:16.1886|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-16 13:22:16.1886|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCollabbyid", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCollabbyid() on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-16 13:22:16.1886|INFO|FundooNotes.Controllers.CollaborationController|Collaborators Fetched Successfully
+2024-05-16 13:22:16.1886|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Collaboration.CollabInfoModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:22:16.1886|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes) in 7.1062ms
+2024-05-16 13:22:16.1886|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-16 13:22:16.1886|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/Collaboration - 200 - application/json;+charset=utf-8 9.8017ms
+2024-05-16 13:27:53.0212|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/user/register - application/json 110
+2024-05-16 13:27:53.0212|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-16 13:27:53.0289|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.User.UserRegistrationModel) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:27:53.4981|INFO|Fundo_Notes.Controllers.UserController|Registration successful
+2024-05-16 13:27:53.4981|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[ModelLayer.User.UserRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 13:27:53.4981|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes) in 471.049ms
+2024-05-16 13:27:53.4981|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-16 13:27:53.5013|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/user/register - 200 - application/json;+charset=utf-8 479.8240ms
+2024-05-16 13:29:35.4843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/swagger/index.html/api//user/register - application/json 113
+2024-05-16 13:29:35.4843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/swagger/index.html/api//user/register - 404 0 - 1.6077ms
+2024-05-16 13:29:35.4843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7037/swagger/index.html/api//user/register, Response status code: 404
+2024-05-16 13:32:18.2642|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api//user/register - application/json 113
+2024-05-16 13:32:18.2642|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api//user/register - 404 0 - 1.4680ms
+2024-05-16 13:32:18.2642|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7037/api//user/register, Response status code: 404
+2024-05-16 13:32:48.1805|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api//user/register - application/json 113
+2024-05-16 13:32:48.1805|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api//user/register - 404 0 - 0.8709ms
+2024-05-16 13:32:48.1805|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7037/api//user/register, Response status code: 404
+2024-05-16 13:33:23.3672|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api//user/register - application/json 113
+2024-05-16 13:33:23.3672|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api//user/register - 404 0 - 2.4014ms
+2024-05-16 13:33:23.3672|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7037/api//user/register, Response status code: 404
+2024-05-16 13:33:37.4340|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api//user/register - application/json 113
+2024-05-16 13:33:37.4340|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api//user/register - 404 0 - 0.7732ms
+2024-05-16 13:33:37.4340|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7037/api//user/register, Response status code: 404
+2024-05-16 13:35:15.3225|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api//user/register - application/json 113
+2024-05-16 13:35:15.3225|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api//user/register - 404 0 - 1.3431ms
+2024-05-16 13:35:15.3225|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7037/api//user/register, Response status code: 404
+2024-05-16 13:36:35.3072|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/user/register - application/json 113
+2024-05-16 13:36:35.3072|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-16 13:36:35.3116|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.User.UserRegistrationModel) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:36:35.8570|INFO|Fundo_Notes.Controllers.UserController|Registration successful
+2024-05-16 13:36:35.8570|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[ModelLayer.User.UserRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 13:36:35.8570|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes) in 546.3205ms
+2024-05-16 13:36:35.8570|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-16 13:36:35.8570|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/user/register - 200 - application/json;+charset=utf-8 552.3115ms
+2024-05-16 13:37:15.8048|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/user/forgotpassword - - 0
+2024-05-16 13:37:15.8048|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:37:15.8161|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:37:15.8161|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 13:37:15.8473|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes) in 30.749ms
+2024-05-16 13:37:15.8473|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:37:15.8473|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/user/forgotpassword - 400 - application/problem+json;+charset=utf-8 43.2015ms
+2024-05-16 13:37:57.1230|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7037/api/user/forgotpassword?Email=fvrttrftv - - 0
+2024-05-16 13:37:57.1230|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:37:57.1230|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:37:57.1230|INFO|Fundo_Notes.Controllers.UserController|Email Sent
+2024-05-16 13:37:57.2592|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:37:57.2592|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes) in 135.2788ms
+2024-05-16 13:37:57.2592|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:37:57.2592|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7037/api/user/forgotpassword?Email=fvrttrftv - 200 - application/json;+charset=utf-8 137.4292ms
+2024-05-16 13:39:12.1216|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/user/forgotpassword?Email=ujwal@gmail.com - - 0
+2024-05-16 13:39:12.1216|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:39:12.1216|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:39:12.1216|INFO|Fundo_Notes.Controllers.UserController|Email Sent
+2024-05-16 13:39:15.2421|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:39:15.2421|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes) in 3119.479ms
+2024-05-16 13:39:15.2421|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:39:15.2421|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/user/forgotpassword?Email=ujwal@gmail.com - 200 - application/json;+charset=utf-8 3123.1108ms
+2024-05-16 13:40:51.2806|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/user/forgotpassword?Email=ujwal@gmail.com - - 0
+2024-05-16 13:40:51.2840|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:40:51.2840|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:40:51.2840|INFO|Fundo_Notes.Controllers.UserController|Email Sent
+2024-05-16 13:40:54.7772|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:40:54.7804|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes) in 3494.2182ms
+2024-05-16 13:40:54.7804|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:40:54.7804|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/user/forgotpassword?Email=ujwal@gmail.com - 200 - application/json;+charset=utf-8 3501.0927ms
+2024-05-16 13:46:22.0480|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/user/register - application/json 120
+2024-05-16 13:46:22.0480|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-16 13:46:22.0480|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserRegistration", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistration(ModelLayer.User.UserRegistrationModel) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:46:22.1909|INFO|Fundo_Notes.Controllers.UserController|Registration successful
+2024-05-16 13:46:22.1909|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[ModelLayer.User.UserRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 13:46:22.1909|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes) in 141.8475ms
+2024-05-16 13:46:22.1909|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UserRegistration (Fundo Notes)'
+2024-05-16 13:46:22.1909|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/user/register - 200 - application/json;+charset=utf-8 144.3039ms
+2024-05-16 13:48:32.4786|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/user/login?email=sudhanva@gmail.com&password=Sudhanva@123 - - 0
+2024-05-16 13:48:32.4786|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UserLogin (Fundo Notes)'
+2024-05-16 13:48:32.4914|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(System.String, System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:48:32.6600|INFO|Fundo_Notes.Controllers.UserController|User Login Successfully
+2024-05-16 13:48:32.6600|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:48:32.6600|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UserLogin (Fundo Notes) in 168.7485ms
+2024-05-16 13:48:32.6600|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UserLogin (Fundo Notes)'
+2024-05-16 13:48:32.6600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/user/login?email=sudhanva@gmail.com&password=Sudhanva@123 - 200 - application/json;+charset=utf-8 182.2716ms
+2024-05-16 13:51:59.7346|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH https://localhost:7037/api/user/updatePassword?email=sudhanva@gmail.com&oldPassword=sudhanva@123&newPassword=sudhanva@234 - - 0
+2024-05-16 13:51:59.7346|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UpdatePassword (Fundo Notes)'
+2024-05-16 13:51:59.7346|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdatePassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.String, System.String, System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:51:59.8997|ERROR|Fundo_Notes.Controllers.UserController|Failed to login Can't update, Current Password 'sudhanva@123' is Invalid
+2024-05-16 13:51:59.8997|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:51:59.8997|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UpdatePassword (Fundo Notes) in 159.1962ms
+2024-05-16 13:51:59.8997|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UpdatePassword (Fundo Notes)'
+2024-05-16 13:51:59.8997|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH https://localhost:7037/api/user/updatePassword?email=sudhanva@gmail.com&oldPassword=sudhanva@123&newPassword=sudhanva@234 - 200 - application/json;+charset=utf-8 166.1847ms
+2024-05-16 13:52:19.0881|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH https://localhost:7037/api/user/updatePassword?email=sudhanva@gmail.com&oldPassword=Sudhanva@123&newPassword=Sudhanva@234 - - 0
+2024-05-16 13:52:19.0881|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UpdatePassword (Fundo Notes)'
+2024-05-16 13:52:19.0881|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdatePassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.String, System.String, System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:52:19.2016|INFO|Fundo_Notes.Controllers.UserController|Successfully Updated Password
+2024-05-16 13:52:19.2016|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:52:19.2016|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UpdatePassword (Fundo Notes) in 112.8472ms
+2024-05-16 13:52:19.2016|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UpdatePassword (Fundo Notes)'
+2024-05-16 13:52:19.2016|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH https://localhost:7037/api/user/updatePassword?email=sudhanva@gmail.com&oldPassword=Sudhanva@123&newPassword=Sudhanva@234 - 200 - application/json;+charset=utf-8 114.3853ms
+2024-05-16 13:53:58.4896|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/user/forgotPassword?email=thanaykumaryr@gmail.com - - 0
+2024-05-16 13:53:58.4896|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:53:58.4896|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 13:53:58.4896|INFO|Fundo_Notes.Controllers.UserController|Email Sent
+2024-05-16 13:54:01.4998|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 13:54:01.4998|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes) in 3008.0962ms
+2024-05-16 13:54:01.4998|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.ForgotPassword (Fundo Notes)'
+2024-05-16 13:54:01.4998|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/user/forgotPassword?email=thanaykumaryr@gmail.com - 200 - application/json;+charset=utf-8 3012.9052ms
+2024-05-16 14:00:28.8672|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/resetPassword?otp=864482&Newpassword=Thanay@123 - - 0
+2024-05-16 14:00:28.8672|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/resetPassword?otp=864482&Newpassword=Thanay@123 - 404 0 - 9.1508ms
+2024-05-16 14:00:28.8767|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7037/api/resetPassword, Response status code: 404
+2024-05-16 14:00:47.8248|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/user/resetPassword?otp=864482&Newpassword=Thanay@123 - - 0
+2024-05-16 14:00:47.8248|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.ResetPassword (Fundo Notes)'
+2024-05-16 14:00:47.8342|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ResetPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ResetPassword(System.String, System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 14:00:47.8342|INFO|Fundo_Notes.Controllers.UserController|Password reset successful
+2024-05-16 14:00:52.1756|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:00:52.1756|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.ResetPassword (Fundo Notes) in 4343.2002ms
+2024-05-16 14:00:52.1756|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.ResetPassword (Fundo Notes)'
+2024-05-16 14:00:52.1756|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/user/resetPassword?otp=864482&Newpassword=Thanay@123 - 200 - application/json;+charset=utf-8 4353.7099ms
+2024-05-16 14:03:54.6688|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note/?Label_id=2 - application/json 124
+2024-05-16 14:03:54.6715|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:03:54.6715|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-05-16 14:03:54.6715|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note/?Label_id=2 - 401 0 - 15.7336ms
+2024-05-16 14:05:39.8153|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/user/login?email=thanaykumaryr@gmail.com&password=Thanay@123 - - 0
+2024-05-16 14:05:39.8153|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundo_Notes.Controllers.UserController.UserLogin (Fundo Notes)'
+2024-05-16 14:05:39.8153|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(System.String, System.String) on controller Fundo_Notes.Controllers.UserController (Fundo Notes).
+2024-05-16 14:05:40.0960|INFO|Fundo_Notes.Controllers.UserController|User Login Successfully
+2024-05-16 14:05:40.0964|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:05:40.0964|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundo_Notes.Controllers.UserController.UserLogin (Fundo Notes) in 277.7716ms
+2024-05-16 14:05:40.0964|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundo_Notes.Controllers.UserController.UserLogin (Fundo Notes)'
+2024-05-16 14:05:40.0964|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/user/login?email=thanaykumaryr@gmail.com&password=Thanay@123 - 200 - application/json;+charset=utf-8 282.2537ms
+2024-05-16 14:06:13.9679|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/note/?Label_id=2 - application/json 124
+2024-05-16 14:06:13.9679|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.CreateNote (Fundo Notes)'
+2024-05-16 14:06:13.9769|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNote(ModelLayer.Notes.CreateNoteRequest, Int32) on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:06:14.0590|INFO|FundooNotes.Controllers.NoteController|Note Created Successfully
+2024-05-16 14:06:14.0590|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:06:14.0590|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.CreateNote (Fundo Notes) in 82.8919ms
+2024-05-16 14:06:14.0604|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.CreateNote (Fundo Notes)'
+2024-05-16 14:06:14.0604|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/note/?Label_id=2 - 200 - application/json;+charset=utf-8 93.0247ms
+2024-05-16 14:07:51.1145|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note - - -
+2024-05-16 14:07:51.1145|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:07:51.1145|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-05-16 14:07:51.1145|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note - 401 0 - 2.0331ms
+2024-05-16 14:08:24.0429|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note - - -
+2024-05-16 14:08:24.0429|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:08:24.0429|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-05-16 14:08:24.0446|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note - 401 0 - 1.7192ms
+2024-05-16 14:09:13.9082|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note - - -
+2024-05-16 14:09:13.9082|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-16 14:09:13.9082|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:09:14.2440|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from DB
+2024-05-16 14:09:14.2440|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:09:14.2508|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 332.3313ms
+2024-05-16 14:09:14.2508|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-16 14:09:14.2508|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 343.3364ms
+2024-05-16 14:09:32.8791|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note - - -
+2024-05-16 14:09:32.8791|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-16 14:09:32.8791|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:09:32.9547|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from cache
+2024-05-16 14:09:32.9547|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:09:32.9547|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 73.0922ms
+2024-05-16 14:09:32.9547|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-16 14:09:32.9547|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 77.7424ms
+2024-05-16 14:10:45.2381|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note/archived - - -
+2024-05-16 14:10:45.2381|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-16 14:10:45.2381|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayArchivedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayArchivedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:10:45.3443|ERROR|FundooNotes.Controllers.NoteController|No Notes to display in the archive
+2024-05-16 14:10:45.3443|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:10:45.3443|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes) in 101.4258ms
+2024-05-16 14:10:45.3443|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-16 14:10:45.3443|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note/archived - 400 - application/json;+charset=utf-8 109.3944ms
+2024-05-16 14:11:32.2368|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note - - -
+2024-05-16 14:11:32.2368|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-16 14:11:32.2368|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:11:32.2368|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from cache
+2024-05-16 14:11:32.2368|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:11:32.2368|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 1.3758ms
+2024-05-16 14:11:32.2368|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-16 14:11:32.2368|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 3.8882ms
+2024-05-16 14:12:07.0761|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note/trash - - -
+2024-05-16 14:12:07.0780|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayDeletedNotes (Fundo Notes)'
+2024-05-16 14:12:07.0780|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayDeletedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayDeletedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:12:07.1813|INFO|FundooNotes.Controllers.NoteController|Trashed Notes Fetched Successfully from DB
+2024-05-16 14:12:07.1813|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:12:07.1813|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayDeletedNotes (Fundo Notes) in 98.3105ms
+2024-05-16 14:12:07.1813|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayDeletedNotes (Fundo Notes)'
+2024-05-16 14:12:07.1813|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note/trash - 200 - application/json;+charset=utf-8 107.5608ms
+2024-05-16 14:15:00.2617|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7037/api/note/?note_id=6 - application/json 177
+2024-05-16 14:15:00.2617|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:15:00.2617|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:15:00.2617|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7037/api/note/?note_id=6 - 405 0 - 1.4438ms
+2024-05-16 14:16:28.5660|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7037/api/note/?note_id=6 - application/json 177
+2024-05-16 14:16:28.5660|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:16:28.5660|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:16:28.5774|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7037/api/note/?note_id=6 - 405 0 - 11.4308ms
+2024-05-16 14:16:58.9500|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7037/api/note/?note_id=6 - application/json 177
+2024-05-16 14:16:58.9500|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:16:58.9510|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:16:58.9510|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7037/api/note/?note_id=6 - 405 0 - 1.0936ms
+2024-05-16 14:17:46.3125|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note/trash - - -
+2024-05-16 14:17:46.3125|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayDeletedNotes (Fundo Notes)'
+2024-05-16 14:17:46.3125|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayDeletedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayDeletedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:17:46.3125|INFO|FundooNotes.Controllers.NoteController|Trashed Notes Fetched Successfully from cache
+2024-05-16 14:17:46.3125|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:17:46.3125|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayDeletedNotes (Fundo Notes) in 1.8984ms
+2024-05-16 14:17:46.3125|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayDeletedNotes (Fundo Notes)'
+2024-05-16 14:17:46.3125|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note/trash - 200 - application/json;+charset=utf-8 10.0715ms
+2024-05-16 14:17:57.7902|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7037/api/note/?note_id=6 - application/json 177
+2024-05-16 14:17:57.7902|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:17:57.7902|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:17:57.7902|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7037/api/note/?note_id=6 - 405 0 - 0.7970ms
+2024-05-16 14:18:30.9798|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7037/api/note/6 - application/json 177
+2024-05-16 14:18:30.9798|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:18:30.9798|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-05-16 14:18:30.9798|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7037/api/note/6 - 401 0 - 1.7686ms
+2024-05-16 14:19:43.3064|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 PUT https://localhost:7037/api/note/6 - application/json 171
+2024-05-16 14:19:43.3064|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes)'
+2024-05-16 14:19:43.3132|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateNote(Int32, ModelLayer.Notes.CreateNoteRequest) on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:19:58.3579|ERROR|FundooNotes.Controllers.NoteController|A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+2024-05-16 14:19:58.3579|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:19:58.3579|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes) in 15046.5712ms
+2024-05-16 14:19:58.3579|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes)'
+2024-05-16 14:19:58.3579|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 PUT https://localhost:7037/api/note/6 - 400 - application/json;+charset=utf-8 15054.3383ms
+2024-05-16 14:20:24.7122|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 PUT https://localhost:7037/api/note/6 - application/json 171
+2024-05-16 14:20:24.7122|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes)'
+2024-05-16 14:20:24.7122|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateNote(Int32, ModelLayer.Notes.CreateNoteRequest) on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:20:24.8791|INFO|FundooNotes.Controllers.NoteController|Note updated successfully
+2024-05-16 14:20:24.8791|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 14:20:24.8791|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes) in 166.5937ms
+2024-05-16 14:20:24.8791|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes)'
+2024-05-16 14:20:24.8791|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 PUT https://localhost:7037/api/note/6 - 200 - application/json;+charset=utf-8 169.6871ms
+2024-05-16 14:21:53.9773|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7037/api/note/ - application/json 177
+2024-05-16 14:21:53.9773|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:21:53.9773|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported'
+2024-05-16 14:21:53.9773|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7037/api/note/ - 405 0 - 1.4229ms
+2024-05-16 14:22:01.6859|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7037/api/note/6 - application/json 177
+2024-05-16 14:22:01.6859|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes)'
+2024-05-16 14:22:01.6859|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateNote(Int32, ModelLayer.Notes.CreateNoteRequest) on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:22:01.7538|INFO|FundooNotes.Controllers.NoteController|Note updated successfully
+2024-05-16 14:22:01.7538|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 14:22:01.7538|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes) in 67.2566ms
+2024-05-16 14:22:01.7538|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes)'
+2024-05-16 14:22:01.7538|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7037/api/note/6 - 200 - application/json;+charset=utf-8 68.8157ms
+2024-05-16 14:24:36.1175|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7037/api/note/6 - application/json 177
+2024-05-16 14:24:36.1175|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes)'
+2024-05-16 14:24:36.1175|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateNote(Int32, ModelLayer.Notes.CreateNoteRequest) on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:24:36.2792|INFO|FundooNotes.Controllers.NoteController|Note updated successfully
+2024-05-16 14:24:36.2792|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 14:24:36.2792|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes) in 160.7547ms
+2024-05-16 14:24:36.2809|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.UpdateNote (Fundo Notes)'
+2024-05-16 14:24:36.2809|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7037/api/note/6 - 200 - application/json;+charset=utf-8 164.3253ms
+2024-05-16 14:24:41.7496|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note/archived - - -
+2024-05-16 14:24:41.7496|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-16 14:24:41.7496|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayArchivedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayArchivedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:24:41.7496|INFO|FundooNotes.Controllers.NoteController|Archived Notes Fetched Successfully from DB
+2024-05-16 14:24:41.7496|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:24:41.7496|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes) in 5.4212ms
+2024-05-16 14:24:41.7496|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-16 14:24:41.7496|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note/archived - 200 - application/json;+charset=utf-8 6.9394ms
+2024-05-16 14:24:54.7894|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/note - - -
+2024-05-16 14:24:54.7894|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-16 14:24:54.7894|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:24:54.7894|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from DB
+2024-05-16 14:24:54.7894|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:24:54.7894|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 2.9829ms
+2024-05-16 14:24:54.7894|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-16 14:24:54.7946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 5.1859ms
+2024-05-16 14:25:54.5016|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE https://localhost:7037/api/note/2 - - -
+2024-05-16 14:25:54.5016|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:25:54.5016|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-05-16 14:25:54.5016|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE https://localhost:7037/api/note/2 - 401 0 - 0.9838ms
+2024-05-16 14:26:22.5903|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE https://localhost:7037/api/note/2 - - -
+2024-05-16 14:26:22.5903|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:26:22.5924|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-05-16 14:26:22.5924|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE https://localhost:7037/api/note/2 - 401 0 - 2.6253ms
+2024-05-16 14:26:42.3632|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE https://localhost:7037/api/note/2 - - -
+2024-05-16 14:26:42.3632|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:26:42.3632|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-05-16 14:26:42.3632|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE https://localhost:7037/api/note/2 - 401 0 - 1.2151ms
+2024-05-16 14:27:05.0791|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE https://localhost:7037/api/note/2 - - -
+2024-05-16 14:27:05.0791|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DeleteNote (Fundo Notes)'
+2024-05-16 14:27:05.0791|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeleteNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteNote(Int32) on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-16 14:27:05.1692|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:27:05.1700|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DeleteNote (Fundo Notes) in 82.0719ms
+2024-05-16 14:27:05.1700|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DeleteNote (Fundo Notes)'
+2024-05-16 14:27:05.1700|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE https://localhost:7037/api/note/2 - 200 - application/json;+charset=utf-8 91.2639ms
+2024-05-16 14:28:38.1104|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/label - application/json 34
+2024-05-16 14:28:38.1104|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.AddLabel (Fundo Notes)'
+2024-05-16 14:28:38.1104|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddLabel", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddLabel(ModelLayer.Label.CreateLabel) on controller FundooNotes.Controllers.LabelController (Fundo Notes).
+2024-05-16 14:28:38.1930|INFO|FundooNotes.Controllers.LabelController|Label created 
+2024-05-16 14:28:38.1930|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:28:38.1930|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.AddLabel (Fundo Notes) in 81.9295ms
+2024-05-16 14:28:38.1930|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.AddLabel (Fundo Notes)'
+2024-05-16 14:28:38.1930|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/label - 200 - application/json;+charset=utf-8 83.8700ms
+2024-05-16 14:29:17.7002|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/label - - -
+2024-05-16 14:29:17.7024|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.GetAllLabel (Fundo Notes)'
+2024-05-16 14:29:17.7024|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllLabel", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLabel() on controller FundooNotes.Controllers.LabelController (Fundo Notes).
+2024-05-16 14:29:17.7024|INFO|FundooNotes.Controllers.LabelController|getnotesbyid
+2024-05-16 14:29:17.7024|INFO|FundooNotes.Controllers.LabelController|All Labels retrieved successfully
+2024-05-16 14:29:17.7024|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[Repository.Entity.LabelEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:29:17.7024|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.GetAllLabel (Fundo Notes) in 3.2801ms
+2024-05-16 14:29:17.7024|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.GetAllLabel (Fundo Notes)'
+2024-05-16 14:29:17.7024|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/label - 200 - application/json;+charset=utf-8 6.6081ms
+2024-05-16 14:32:06.7892|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7037/api/label/1 - application/json 33
+2024-05-16 14:32:06.7892|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.UpdateLabel (Fundo Notes)'
+2024-05-16 14:32:06.7957|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UpdateLabel", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateLabel(ModelLayer.Label.CreateLabel, Int32) on controller FundooNotes.Controllers.LabelController (Fundo Notes).
+2024-05-16 14:32:06.8691|INFO|FundooNotes.Controllers.LabelController|Label Updated
+2024-05-16 14:32:06.8691|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:32:06.8691|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.UpdateLabel (Fundo Notes) in 73.8395ms
+2024-05-16 14:32:06.8691|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.UpdateLabel (Fundo Notes)'
+2024-05-16 14:32:06.8691|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7037/api/label/1 - 200 - application/json;+charset=utf-8 80.8459ms
+2024-05-16 14:33:57.1996|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE https://localhost:7037/api/label/1 - - -
+2024-05-16 14:33:57.2037|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.Removelabel (Fundo Notes)'
+2024-05-16 14:33:57.2037|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Removelabel", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Removelabel(Int32) on controller FundooNotes.Controllers.LabelController (Fundo Notes).
+2024-05-16 14:33:57.2777|INFO|FundooNotes.Controllers.LabelController|Label deleted
+2024-05-16 14:33:57.2777|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:33:57.2777|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.Removelabel (Fundo Notes) in 67.8686ms
+2024-05-16 14:33:57.2777|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.Removelabel (Fundo Notes)'
+2024-05-16 14:33:57.2792|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE https://localhost:7037/api/label/1 - 200 - application/json;+charset=utf-8 79.4258ms
+2024-05-16 14:35:36.6393|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/label/2 - - -
+2024-05-16 14:35:36.6401|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.GetAllNotebyLabelId (Fundo Notes)'
+2024-05-16 14:35:36.6401|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllNotebyLabelId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotebyLabelId(Int32) on controller FundooNotes.Controllers.LabelController (Fundo Notes).
+2024-05-16 14:35:36.7120|INFO|FundooNotes.Controllers.LabelController|Label retrieved successfully by its id
+2024-05-16 14:35:36.7120|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:35:36.7120|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.GetAllNotebyLabelId (Fundo Notes) in 72.2442ms
+2024-05-16 14:35:36.7120|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.GetAllNotebyLabelId (Fundo Notes)'
+2024-05-16 14:35:36.7120|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/label/2 - 200 - application/json;+charset=utf-8 73.8224ms
+2024-05-16 14:36:45.6285|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7037/api/Collaboration/ - - -
+2024-05-16 14:36:45.6285|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-16 14:36:45.6285|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCollabbyid", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCollabbyid() on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-16 14:36:45.7001|INFO|FundooNotes.Controllers.CollaborationController|Collaborators Fetched Successfully
+2024-05-16 14:36:45.7001|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Collaboration.CollabInfoModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:36:45.7009|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes) in 70.0724ms
+2024-05-16 14:36:45.7009|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.GetCollabbyid (Fundo Notes)'
+2024-05-16 14:36:45.7009|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7037/api/Collaboration/ - 200 - application/json;+charset=utf-8 72.7544ms
+2024-05-16 14:38:49.1859|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7037/api/Collaboration/?noteid=3 - application/json 38
+2024-05-16 14:38:49.1859|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes)'
+2024-05-16 14:38:49.1859|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddCollaborator", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCollaborator(Int32, ModelLayer.CollaborationRequestModel) on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-16 14:38:52.6900|INFO|FundooNotes.Controllers.CollaborationController|Collabarator Added
+2024-05-16 14:38:52.6900|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:38:52.6900|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes) in 3505.8016ms
+2024-05-16 14:38:52.6900|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.AddCollaborator (Fundo Notes)'
+2024-05-16 14:38:52.6900|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7037/api/Collaboration/?noteid=3 - 200 - application/json;+charset=utf-8 3509.8032ms
+2024-05-16 14:40:43.3209|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE https://localhost:7037/api/Collaboration/3 - - -
+2024-05-16 14:40:43.3209|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.CollaborationController.RemoveCollaborator (Fundo Notes)'
+2024-05-16 14:40:43.3209|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RemoveCollaborator", controller = "Collaboration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveCollaborator(Int32) on controller FundooNotes.Controllers.CollaborationController (Fundo Notes).
+2024-05-16 14:40:43.3911|INFO|FundooNotes.Controllers.CollaborationController|Collaborator removed successfully
+2024-05-16 14:40:43.3911|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-16 14:40:43.3911|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.CollaborationController.RemoveCollaborator (Fundo Notes) in 65.0554ms
+2024-05-16 14:40:43.3911|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.CollaborationController.RemoveCollaborator (Fundo Notes)'
+2024-05-16 14:40:43.3911|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE https://localhost:7037/api/Collaboration/3 - 200 - application/json;+charset=utf-8 70.9644ms

@@ -15,9 +15,7 @@ namespace BussinesLayer
                 mailMessage.IsBodyHtml = true;
                 System.Net.Mail.SmtpClient smtpClient = new System.Net.Mail.SmtpClient("smtp-mail.outlook.com");
 
-
                 smtpClient.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
-
 
                 smtpClient.Port = 587;
 
