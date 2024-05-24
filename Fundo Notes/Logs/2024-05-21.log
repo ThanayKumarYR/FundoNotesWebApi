@@ -1,0 +1,281 @@
+2024-05-21 11:16:29.1403|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 11:16:29.8127|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-21 11:16:29.9322|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-21 11:16:29.9322|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-21 11:16:29.9322|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-21 11:16:29.9322|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-21 11:16:29.9322|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes
+2024-05-21 11:16:30.6781|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-21 11:16:31.2850|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 605.8935ms
+2024-05-21 11:16:31.2911|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-21 11:16:31.4569|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 165.4757ms
+2024-05-21 11:16:32.0381|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-21 11:16:32.0381|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-21 11:16:32.0381|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-21 11:16:32.0381|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-21 11:16:32.0452|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-21 11:16:32.0452|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 11.0099ms
+2024-05-21 11:16:32.0849|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-21 11:16:32.0849|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-21 11:16:32.0849|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 52.8417ms
+2024-05-21 11:16:32.0849|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 52.5103ms
+2024-05-21 11:16:32.1082|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-21 11:16:32.1082|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 70.5668ms
+2024-05-21 11:16:32.1493|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 103.7631ms
+2024-05-21 11:16:32.4381|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-21 11:16:32.6589|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 220.7665ms
+2024-05-21 11:17:04.7179|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note - - -
+2024-05-21 11:17:04.7966|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 11:17:04.8275|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 11:17:09.3064|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 4471.1562ms
+2024-05-21 11:17:09.3064|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 11:17:09.3064|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter writer, Nullable`1 serverType, EndPointCollection endpoints) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 723
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 685
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 663
+   at RepositoryLayer.Services.CacheService..ctor(String connectionString) in C:\Users\Thanay\source\repos\FundoNotesWebApi\RepositoryLayer\Helper\CacheService.cs:line 13
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__1(IServiceProvider sp) in C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes\Program.cs:line 53
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-21 11:17:09.9734|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note - 500 - text/plain;+charset=utf-8 5255.4511ms
+2024-05-21 11:17:36.2785|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note - - -
+2024-05-21 11:17:36.2876|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 11:17:36.2876|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 11:17:36.7123|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from cache
+2024-05-21 11:17:36.7199|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 11:17:36.7199|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 438.9162ms
+2024-05-21 11:17:36.7199|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 11:17:36.7199|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 450.5494ms
+2024-05-21 11:17:51.7456|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note/archived - - -
+2024-05-21 11:17:51.7456|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 11:17:51.7456|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayArchivedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayArchivedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 11:17:53.0966|INFO|FundooNotes.Controllers.NoteController|Archived Notes Fetched Successfully from DB
+2024-05-21 11:17:53.0966|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 11:17:53.0978|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes) in 1340.3772ms
+2024-05-21 11:17:53.0978|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 11:17:53.0978|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note/archived - 200 - application/json;+charset=utf-8 1352.9454ms
+2024-05-21 11:17:56.9659|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note/archived - - -
+2024-05-21 11:17:56.9659|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 11:17:56.9659|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayArchivedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayArchivedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 11:17:56.9659|INFO|FundooNotes.Controllers.NoteController|Archived Notes Fetched Successfully from cache
+2024-05-21 11:17:56.9659|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 11:17:56.9659|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes) in 4.0944ms
+2024-05-21 11:17:56.9659|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 11:17:56.9659|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note/archived - 200 - application/json;+charset=utf-8 8.3067ms
+2024-05-21 12:10:59.1267|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 12:10:59.6304|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-21 12:10:59.7635|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-21 12:10:59.7635|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-21 12:10:59.7635|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-21 12:10:59.7833|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-21 12:10:59.7833|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes
+2024-05-21 12:11:00.8053|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-21 12:11:01.1950|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 392.9291ms
+2024-05-21 12:11:01.2118|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-21 12:11:01.4510|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-21 12:11:01.4574|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-21 12:11:01.4574|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-21 12:11:01.4574|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 246.1187ms
+2024-05-21 12:11:01.4574|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-21 12:11:01.4574|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-21 12:11:01.4766|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 9.6299ms
+2024-05-21 12:11:01.5335|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-21 12:11:01.5586|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-21 12:11:01.5586|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 114.5006ms
+2024-05-21 12:11:01.6205|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 157.6058ms
+2024-05-21 12:11:01.6378|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-21 12:11:01.6687|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 211.1376ms
+2024-05-21 12:11:01.7244|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 266.9796ms
+2024-05-21 12:11:02.5902|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-21 12:11:03.1429|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 552.7070ms
+2024-05-21 12:13:13.1782|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 12:13:13.4920|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-21 12:13:13.5630|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-21 12:13:13.5630|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-21 12:13:13.5660|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-21 12:13:13.5660|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-21 12:13:13.5660|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes
+2024-05-21 12:13:14.3944|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-21 12:13:14.9200|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 523.2065ms
+2024-05-21 12:13:14.9317|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-21 12:13:15.3821|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 450.2445ms
+2024-05-21 12:13:16.8590|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-21 12:13:16.8590|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-21 12:13:16.8590|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-21 12:13:16.8692|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-21 12:13:16.8692|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-21 12:13:16.8791|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 9.7702ms
+2024-05-21 12:13:16.9422|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-21 12:13:16.9422|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-21 12:13:16.9578|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 98.6947ms
+2024-05-21 12:13:16.9578|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 96.3091ms
+2024-05-21 12:13:16.9877|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-21 12:13:16.9877|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 129.6883ms
+2024-05-21 12:13:17.0277|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 153.2499ms
+2024-05-21 12:13:17.5778|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-21 12:13:17.8656|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 287.7003ms
+2024-05-21 12:13:50.6739|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note - - -
+2024-05-21 12:13:50.8705|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:13:50.9314|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:13:51.4091|ERROR|FundooNotes.Controllers.NoteController|The method or operation is not implemented.
+2024-05-21 12:13:51.4091|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:13:51.4677|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 503.1715ms
+2024-05-21 12:13:51.4677|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:13:51.4677|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note - 400 - application/json;+charset=utf-8 794.8371ms
+2024-05-21 12:15:21.9739|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 12:15:22.2115|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-21 12:15:22.3005|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-21 12:15:22.3005|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-21 12:15:22.3005|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-21 12:15:22.3005|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-21 12:15:22.3005|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes
+2024-05-21 12:15:22.8595|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-21 12:15:23.1384|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 283.2733ms
+2024-05-21 12:15:23.1384|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-21 12:15:23.3291|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-21 12:15:23.3291|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-21 12:15:23.3291|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-21 12:15:23.3353|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 190.4423ms
+2024-05-21 12:15:23.3353|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-21 12:15:23.3353|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-21 12:15:23.3538|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 8.7487ms
+2024-05-21 12:15:23.3843|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-21 12:15:23.3843|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-21 12:15:23.3946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 62.0836ms
+2024-05-21 12:15:23.4109|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-21 12:15:23.4109|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 92.0547ms
+2024-05-21 12:15:23.4266|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 97.3895ms
+2024-05-21 12:15:23.4525|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 107.6380ms
+2024-05-21 12:15:23.9468|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-21 12:15:24.2936|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 346.6795ms
+2024-05-21 12:15:42.8288|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note - - -
+2024-05-21 12:15:42.9377|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:15:42.9651|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:15:43.2876|ERROR|FundooNotes.Controllers.NoteController|The method or operation is not implemented.
+2024-05-21 12:15:43.2876|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:15:43.3355|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 346.3912ms
+2024-05-21 12:15:43.3355|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:15:43.3355|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note - 400 - application/json;+charset=utf-8 508.1415ms
+2024-05-21 12:16:55.4144|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 12:16:55.8818|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-21 12:16:55.9977|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-21 12:16:55.9977|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-21 12:16:56.0077|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-21 12:16:56.0077|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-21 12:16:56.0077|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes
+2024-05-21 12:17:29.0229|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Thanay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 12:17:29.3830|WARN|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-05-21 12:17:29.5323|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7037
+2024-05-21 12:17:29.5335|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5142
+2024-05-21 12:17:29.5335|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-21 12:17:29.5335|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-21 12:17:29.5335|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Thanay\source\repos\FundoNotesWebApi\Fundo Notes
+2024-05-21 12:17:30.2608|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger - - -
+2024-05-21 12:17:30.8858|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger - 301 0 - 605.4056ms
+2024-05-21 12:17:30.8858|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/index.html - - -
+2024-05-21 12:17:31.4246|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/index.html - 200 - text/html;charset=utf-8 534.9553ms
+2024-05-21 12:17:33.4295|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - - -
+2024-05-21 12:17:33.4295|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - - -
+2024-05-21 12:17:33.4295|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - - -
+2024-05-21 12:17:33.4295|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-21 12:17:33.4295|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/_vs/browserLink - - -
+2024-05-21 12:17:33.4403|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 10.1828ms
+2024-05-21 12:17:33.4968|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-21 12:17:33.4968|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-21 12:17:33.5433|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-21 12:17:33.5433|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui.css - 200 143943 text/css 116.8266ms
+2024-05-21 12:17:33.5942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 164.6029ms
+2024-05-21 12:17:33.5967|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 167.1450ms
+2024-05-21 12:17:33.5967|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 179.5293ms
+2024-05-21 12:17:34.1900|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - - -
+2024-05-21 12:17:34.5201|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 329.9666ms
+2024-05-21 12:17:58.4012|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note - - -
+2024-05-21 12:17:58.6108|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:17:58.6939|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:17:59.5599|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from cache
+2024-05-21 12:17:59.5755|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:17:59.6364|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 907.3685ms
+2024-05-21 12:17:59.6364|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:17:59.6437|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 1242.5328ms
+2024-05-21 12:18:07.0683|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note - - -
+2024-05-21 12:18:07.0882|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:18:07.0882|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:18:07.0882|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from cache
+2024-05-21 12:18:07.0966|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:18:07.0966|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 16.2852ms
+2024-05-21 12:18:07.0966|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:18:07.0966|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 39.2703ms
+2024-05-21 12:18:14.5338|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note/archived - - -
+2024-05-21 12:18:14.5338|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 12:18:14.5529|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayArchivedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayArchivedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:18:14.5696|INFO|FundooNotes.Controllers.NoteController|Archived Notes Fetched Successfully from cache
+2024-05-21 12:18:14.5696|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:18:14.5696|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes) in 18.0441ms
+2024-05-21 12:18:14.5696|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 12:18:14.5696|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note/archived - 200 - application/json;+charset=utf-8 38.6087ms
+2024-05-21 12:18:18.5834|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note/archived - - -
+2024-05-21 12:18:18.5834|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 12:18:18.5834|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayArchivedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayArchivedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:18:18.5834|INFO|FundooNotes.Controllers.NoteController|Archived Notes Fetched Successfully from cache
+2024-05-21 12:18:18.5834|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:18:18.5834|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes) in 2.3176ms
+2024-05-21 12:18:18.5834|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 12:18:18.5834|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note/archived - 200 - application/json;+charset=utf-8 9.1743ms
+2024-05-21 12:18:54.6991|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note - - -
+2024-05-21 12:18:54.7108|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:18:54.7108|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:18:54.7108|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from cache
+2024-05-21 12:18:54.7108|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:18:54.7108|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 2.0825ms
+2024-05-21 12:18:54.7108|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:18:54.7108|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 20.2486ms
+2024-05-21 12:18:58.7194|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note - - -
+2024-05-21 12:18:58.7208|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:18:58.7208|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayNote", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayNote() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:18:58.7208|INFO|FundooNotes.Controllers.NoteController|Active Note Fetched Successfully from cache
+2024-05-21 12:18:58.7208|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:18:58.7208|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes) in 1.9013ms
+2024-05-21 12:18:58.7208|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayNote (Fundo Notes)'
+2024-05-21 12:18:58.7208|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note - 200 - application/json;+charset=utf-8 5.7693ms
+2024-05-21 12:19:01.9759|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note/archived - - -
+2024-05-21 12:19:01.9759|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 12:19:01.9759|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayArchivedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayArchivedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:19:01.9759|INFO|FundooNotes.Controllers.NoteController|Archived Notes Fetched Successfully from cache
+2024-05-21 12:19:01.9759|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:19:01.9759|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes) in 3.6009ms
+2024-05-21 12:19:01.9759|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayArchivedNotes (Fundo Notes)'
+2024-05-21 12:19:01.9869|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note/archived - 200 - application/json;+charset=utf-8 10.8817ms
+2024-05-21 12:19:09.7371|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7037/api/note/trash - - -
+2024-05-21 12:19:09.7371|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.NoteController.DisplayDeletedNotes (Fundo Notes)'
+2024-05-21 12:19:09.7371|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DisplayDeletedNotes", controller = "Note"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DisplayDeletedNotes() on controller FundooNotes.Controllers.NoteController (Fundo Notes).
+2024-05-21 12:19:11.2843|INFO|FundooNotes.Controllers.NoteController|Trashed Notes Fetched Successfully from DB
+2024-05-21 12:19:11.2843|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Notes.NoteResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-21 12:19:11.2843|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.NoteController.DisplayDeletedNotes (Fundo Notes) in 1537.9502ms
+2024-05-21 12:19:11.2843|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.NoteController.DisplayDeletedNotes (Fundo Notes)'
+2024-05-21 12:19:11.2843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7037/api/note/trash - 200 - application/json;+charset=utf-8 1554.0492ms

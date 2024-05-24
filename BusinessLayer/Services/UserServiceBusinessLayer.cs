@@ -4,8 +4,7 @@ using Repository.GlobalExceptions;
 using RepositoryLayer.Interface;
 using System.Text.RegularExpressions;
 using Repository.Entity;
-using BussinesLayer;
-using BCrypt.Net;
+using RepositoryLayer;
 
 namespace BusinessLayer.Services
 {
@@ -53,7 +52,9 @@ namespace BusinessLayer.Services
 
             try
             {
-                MailSender.sendMail(Email, otp);
+                string subject = "Change password for Fundoo Notes";
+                string message = "This is your otp please enter to change password " + otp;
+                MailSender.sendMail(Email,subject, message);
                 Console.WriteLine(otp);
                 return Task.FromResult("OTP sent");
             }

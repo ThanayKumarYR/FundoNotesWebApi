@@ -46,13 +46,21 @@ builder.Services.AddScoped<ILabelBusinessLayer, LabelRepositoryBusinessLayer>();
 builder.Services.AddScoped<ICollaborationRL, CollaborationService>();
 builder.Services.AddScoped<ICollaboration, CollaborationServicebl>();
 
-// Add Redis distributed cache
+//Add Redis distributed cache
 builder.Services.AddSingleton<IDistributedCache, CacheService>(sp =>
 {
-    var redisConfiguration = builder.Configuration.GetSection("Redis")["RedisConnection"];
+    var redisConfiguration = builder.Configuration.GetSection("Redis")["RedisConnection"] ;
     return new CacheService(redisConfiguration);
 });
 
+builder.Services.AddCors(Options =>
+{
+    Options.AddPolicy("AllowSpecificOrigin",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:4200/", "https://localhost:7209/").AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin();
+        });
+});
 
 //builder.Services.AddDistributedMemoryCache();
 
@@ -128,6 +136,8 @@ builder.Services.AddSwaggerGen();
 
 
 var app = builder.Build();
+
+app.UseCors("AllowSpecificOrigin");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
