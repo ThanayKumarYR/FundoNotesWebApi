@@ -93,47 +93,15 @@ namespace RepositoryLayer.Services
             var registrationDetailsJson = Newtonsoft.Json.JsonConvert.SerializeObject(registrationDetailsForPublishing);
 
             // Get Kafka producer configuration
-            var producerConfig = KafkaProducerConfig.GetProducerConfig();
+            var producerConfig = KafkaProducer.GetProducerConfig();
 
             // Create a Kafka producer
-            using (var producer = new ProducerBuilder<Null, string>(producerConfig).Build())
-            {
-                try
-                {
-                    // Publish registration details to Kafka topic
-                    await producer.ProduceAsync("Registration-topic", new Message<Null, string> { Value = registrationDetailsJson });
-                    Console.WriteLine("Registration details published to Kafka topic.");
-                }
-                catch (ProduceException<Null, string> e)
-                {
-                    Console.WriteLine($"Failed to publish registration details to Kafka topic: {e.Error.Reason}");
-                }
-            }
+            KafkaProducer.produceTopic(producerConfig, registrationDetailsJson);
 
-            var consumerConfig = KafkaConsumerConfig.GetConsumerConfig();
+            var consumerConfig = KafkaConsumer.GetConsumerConfig();
 
-            using (var consumer = new ConsumerBuilder<Ignore, string>(consumerConfig).Build())
-            {
-                consumer.Subscribe("Registration-topic"); // Subscribe to Kafka topic
-                try
-                {
-                    var consumeResult = consumer.Consume(); // Consume message
-                    Console.WriteLine($"Consumed message: {consumeResult.Message.Value}");
-
-                    var registrationDetailsObject = Newtonsoft.Json.JsonConvert.DeserializeObject<UserRegistrationModel>(consumeResult.Message.Value);
-
-                    string Email = registrationDetailsObject.Email;
-                    string subject = $"Hello {registrationDetailsObject.FirstName}, Welcome to Fundo Notes.";
-                    string message = $"You have registered to Fundo Notes with name as {registrationDetailsObject.FirstName} {registrationDetailsObject.LastName} and email id as {registrationDetailsObject.Email}";
-
-                    MailSender.sendMail(Email, subject, message);
-
-                }
-                catch (ConsumeException e)
-                {
-                    throw new KafkaConsumerException(e.Message);
-                }
-            }
+            KafkaConsumer.consumeTopic(consumerConfig);
+            
             return true;
         }
         public async Task<string> UserLogin(UserLoginModel userLogin)

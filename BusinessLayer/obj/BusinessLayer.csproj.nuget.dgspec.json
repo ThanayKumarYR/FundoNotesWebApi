@@ -210,7 +210,7 @@
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[5.2.0, )"
+              "version": "[5.2.1, )"
             },
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",

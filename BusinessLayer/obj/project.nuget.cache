@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "seyKFm70KnE=",
-  "success": true,
+  "dgSpecHash": "0nBLqQVLbIY=",
+  "success": false,
   "projectFilePath": "C:\\Users\\Thanay\\source\\repos\\FundoNotesWebApi\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thanay\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
@@ -62,6 +62,15 @@
       "warningLevel": 1,
       "message": "Package 'BCrypt.Net 0.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
       "libraryId": "BCrypt.Net",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.Data.SqlClient from 5.2.1 to 5.2.0. Reference the package directly from the project to select a different version. \r\n BusinessLayer -> RepositoryLayer -> Microsoft.Data.SqlClient (>= 5.2.1) \r\n BusinessLayer -> Microsoft.Data.SqlClient (>= 5.2.0)",
+      "libraryId": "Microsoft.Data.SqlClient",
       "targetGraphs": [
         "net8.0"
       ]
